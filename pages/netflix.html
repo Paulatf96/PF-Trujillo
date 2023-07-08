@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>All Top Five</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/291f37f473.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="../estilos/styles2.css" rel="stylesheet">  
+  </head>
+    <body>
+      <div class="container-fluid">
+        <div class="row">
+          <header class="cabecero col" styles>
+            <div class="brand">
+              <a href="../index.html"><h1>All Top Five</h1></a>
+              <a href="../index.html"><img id="logo" src="../media/camera.png" alt="camara" width="25px"  ></a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+              <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link"  href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./netflix.html">Netflix</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./disney.html">Disney +</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./prime.html">Prime</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./hbomax.html">HBO max</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./recomienda.html">Recomienda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./suscribete.html">Suscríbete</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./compra.html">Compra</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+        </div>
+
+          <main class="row mainMovies">
+              
+            <div id="movie1" class=" col-md-6 col-sm-12 card  movies" style="width: 13rem;">
+              <img src="../media/netflix1.jpg" class="card-img-top" alt="Poster sin novedad en el frente">
+              <div class="card-body">
+                  <h6 class="card-title">Sin novedad en el frente</h6>
+                  <p class="card-text">(2022)</p>
+                  <button onclick="window.modal1.showModal();"> » Ver más</button>
+              </div> 
+            </div>       
+              
+            <dialog id="modal1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EBk1lXQ7rcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p> <strong>Dirección:</strong> Edward Berger </p>
+                    <p> <strong>Género:</strong> Bélico </p>
+                    <p> La cinta se centra en la angustiosa experiencia de un joven soldado, enlistado en el ejército alemán, durante la Primera Guerra Mundial. Con el paso de los días, el estado de optimismo inicial de Paul Baümer, el protagonista, se torna en angustia al ver la cruda realidad de las trincheras. </p>
+                    <button onclick="window.modal1.close();">Volver</button>
+            </dialog>
+            
+
+            
+            <div id="movie2" class="col-md-6 col-sm-12 card movies" style="width: 13rem;">
+                <img src="../media/netflix2.jpg" class="card-img-top" alt="Poster roma">
+                <div class="card-body">
+                  <h6 class="card-title">Roma</h6>
+                  <p class="card-text">(2018)</p>
+                  <button onclick="window.modal2.showModal();">» Ver más</button>
+                </div>
+            </div>
+
+            <dialog id="modal2">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/6BS27ngZtxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      <p> <strong>Dirección:</strong> Alfonso Cuarón </p>
+                      <p> <strong>Género:</strong> Drama </p>
+                      <p> En este filme original de Netflix, Alfonso Cuarón hace una emotiva fotografía, en blanco y negro, de la sociedad mexicana en los años 70. Cleo, su protagonista, es una empleada del hogar que trabaja para una familia de clase media-alta en Ciudad de México. </p>
+                      <button onclick="window.modal2.close();">Volver</button>
+            </dialog> 
+           
+
+            <div id="movie3" class="col-md-6 col-sm-12 card  movies" style="width: 13rem;">
+                  <img src="../media/netflix3.jpg" class="card-img-top" alt="Poster el extraño">
+                  <div class="card-body">
+                    <h6 class="card-title">El extraño </h6>
+                    <p class="card-text">(2022)</p>
+                    <button onclick="window.modal2.showModal();">» Ver más</button>
+                  </div>
+            </div>
+
+            <dialog id="modal3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/baLjh8h3U8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p><strong>Dirección:</strong> Thomas M. Wright</p>
+                    <p><strong>Género:</strong> Thriller </p>
+                    <p>Esta película australiana, protagonizada por Joel Edgerton, es mucho más que un drama criminal usual. La cinta está basada en hechos reales y se entra en el caso de un policía infiltrado que tratará de mantener una estrecha relación con un sospechoso de asesinato para ganarse su confianza. </p>
+                    <button onclick="window.modal3.close();">Volver</button>
+            </dialog>
+            
+            
+            <div id="movie4" class="col-md-6 col-sm-12 card movies" style="width: 13rem;">
+                <img src="../media/netflix4.jpg" class="card-img-top" alt="Poster el irlandes">
+                <div class="card-body">
+                  <h6 class="card-title">El irlandés</h6>
+                  <p class="card-text">(2019)</p>
+                  <button onclick="window.modal2.showModal();">» Ver más</button>
+                </div>
+            </div>
+
+             <dialog id="modal4">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/B3cJXk9IaH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <p><strong>Dirección:</strong> Martin Scorsese</p>
+                  <p><strong>Género:</strong> Drama </p>
+                  <p>En esta epopeya sobre la mafia, Frank Sheera, veterano de la Segunda Guerra Mundial, narra su trabajo como sicario para algunos de los rostros más conocidos del siglo XX. </p>
+                  <button onclick="window.modal4.close();">Volver</button>
+            </dialog>
+          
+            <div id="movie5" class="col-md-6 col-sm-12 card  movies" style="width: 13rem;">
+                <img src="../media/netflix5.jpg" class="card-img-top" alt="Poster historia de un matrimonio">
+                <div class="card-body">
+                  <h6 class="card-title">Historia de un matrimonio</h6>
+                  <p class="card-text">(2019)</p>
+                  <button onclick="window.modal2.showModal();">» Ver más</button>
+                </div>
+            </div>
+
+            <dialog id="modal5">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/pFg0Rk3L9SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <p><strong>Dirección:</strong> Noah Baumbach</p>
+                  <p><strong>Género:</strong> Drama </p>
+                  <p>¿Qué hay detrás de un proceso de divorcio? Esta es la crónica de un matrimonio fallido, encarnado de forma magistral por Scarlett Johansson y Adam Driver, una actriz y director de teatro respectivamente. Lo que comienza siendo una ruptura aparentemente amistosa, por el bien de su hijo en común, se convierte en una desagradable batalla legal cuando ambos deciden recurrir a sus abogados. </p>
+                  <button onclick="window.modal5.close();">Volver</button>
+            </dialog> 
+          </main>
+          <footer class="row pie">
+            <div class="col-sm">
+              <a href="./compra.html" class="buy-button">Compra aquí</a>
+            </div>
+            <div class="col-sm">
+              <a href="./suscribete.html" class="subscribe">Suscríbete</a>
+            </div>
+            <div class="col-sm">
+              <p class="date">Semana del <span>15</span> de <span>junio</span> del <span>2023</span></p>  
+            </div>
+          </footer>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>  
+    </body>
+</html>

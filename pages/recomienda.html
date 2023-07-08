@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/291f37f473.js" crossorigin="anonymous"></script>
+    <link href="./styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>All Top Five</title>
+</head>
+    <body>
+        <header class="cabecero">
+            <div >
+              <h1>All Top Five</h1>
+              <img id="logo" src="./media/camera.png" alt="camara" width="25px"  >
+            </div>
+            <nav class="navBar">
+              <ul>
+                <li> <a href="./index.html">Inicio</a></li>
+                <li> <a href="./netflix.html">Netflix</a></li>
+                <li> <a href="./hbomax.html">HBO max</a></li>
+                <li> <a href="./disney.html">Disney plus</a></li>
+                <li> <a href="./prime.html">Prime video</a></li>
+                <li> <a href="./recomienda.html">Recomienda</a></li>
+                <li> <a href="./suscribete.html">Suscríbete</a></li>
+                <li> <a href="./compra.html">Compra</a></li>
+              </ul>
+            </nav>
+        </header>
+
+        <main class="mainRecomendation">        
+          <h2> ¿Alguna recomendación para la red? </h2>
+          <form action:"">
+              <div style="display: flex; flex-direction: row;">
+                  <div onclick="setPlatform(`netflix`)" style="background-color: #212A3E; color: #F1F6F9; border-radius: 10px; width: 70px; height: 70px; text-align: center; display: flex; align-items: center; cursor: pointer; margin: 40px">
+                      <p style="flex:1">Netflix</p>
+                  </div>
+
+                  <div onclick="setPlatform(`hbomax`)" style="background-color: #212A3E; color: #F1F6F9; border-radius: 10px; width: 70px; height: 70px; text-align: center; display: flex; align-items: center; cursor: pointer; margin: 40px;">
+                      <p style="flex:1; flex-wrap: wrap;">HBO Max </p>
+                  </div>
+
+                  <div onclick="setPlatform(`disney`)" style="background-color: #212A3E; color: #F1F6F9; border-radius: 10px; width: 70px; height: 70px; text-align: center; display: flex; align-items: center; cursor: pointer; margin: 40px">
+                      <p style="flex:1">Disney +</p>
+                  </div>
+
+                  <div onclick="setPlatform(`prime`)" style="background-color: #212A3E; color: #F1F6F9; border-radius: 10px; width: 70px; height: 70px; text-align: center; display: flex; align-items: center; cursor: pointer; margin: 40px">
+                      <p style="flex:1">Prime video</p>
+                  </div>
+              </div>
+
+              <p>Tipo de contenido
+                  <select name:"tipo">
+                      <option value:"pelicula">Película</option>
+                      <option value:"serie">Serie</option>
+                  </select>
+              </p>
+
+              <p><input type="text" placeholder="Nombre de la película o serie"></p>
+              <p>¡Gracias por recomendar!</p>
+              <button type:"submit" value="send">Enviar</button>
+          </form>
+        </main>
+        <footer>
+            <div>
+              <button class="buy-button"><a href="./compra.html" class="buy-button">Compra aquí</a></button>
+            </div>
+            <div>
+              <a href="./suscribete.html" class="subscribe">Suscríbete</a>
+            </div>
+            <div>
+              <p class="date">Semana del <span>15</span> de <span>junio</span> del <span>2023</span></p>  
+            </div>
+          </footer> 
+    </body>
+</html>
