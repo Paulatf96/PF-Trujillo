@@ -1,33 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles.css" rel="stylesheet"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>All Top Five</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>All Top Five</title>
-</head>
-<body>
-    <header class="cabecero">
-        <div >
-          <h1>All Top Five</h1>
-          <img id="logo" src="./media/camera.png" alt="camara" width="25px"  >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    /> <!-- link bootstrap -->
+    <link href="../estilos/styles2.css" rel="stylesheet">  
+  </head>
+  <body>
+    <!-- Header con navbar de bootstrap -->
+    <header class="cabecero col" styles>
+        <div class="brand">
+          <a href="../index.html"><h1>All Top Five</h1></a>
+          <a href="../index.html"><img id="logo" src="../media/camera.png" alt="camara" width="25px"  ></a>
         </div>
-        <nav class="navBar">
-          <ul>
-            <li> <a href="./index.html">Inicio</a></li>
-            <li> <a href="./netflix.html">Netflix</a></li>
-            <li> <a href="./hbomax.html">HBO max</a></li>
-            <li> <a href="./disney.html">Disney plus</a></li>
-            <li> <a href="./prime.html">Prime video</a></li>
-            <li> <a href="./recomienda.html">Recomienda</a></li>
-            <li> <a href="./suscribete.html">Suscríbete</a></li>
-            <li> <a href="./compra.html">Compra</a></li>
-          </ul>
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link"  href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./netflix.html">Netflix</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./disney.html">Disney +</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./prime.html">Prime</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./hbomax.html">HBO max</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./recomienda.html">Recomienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./suscribete.html">Suscríbete</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="./compra.html">Compra</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
     </header>
+      <!-- Fin Header -->
+        
+    <!-- Contenido principal-->
     <main>
         <table>
             <caption>Compra aquí tu suscripción</caption>
@@ -51,13 +85,13 @@
             <h2>Próximos estrenos</h2>
             <div>
                 <h3>Almas en pena de Inisherin</h3>
-                <img src="./media/estreno1.jpg" alt="Poster almas en pena" width="300">
+                <img src="../media/estreno1.jpg" alt="Poster almas en pena" width="300">
                 <p>Una de las nominadas a los Premios Oscar en 2023 y que podemos ver en Disney+ es “Almas en pena en Inisherin”.El director de “Tres anuncios en las afueras” está tras este largometraje irlandés en el que habla sobre el final de una amistad. Colin Farrell y Brendan Gleeson son dos amigos de toda la vida que se enfrentan al final de la amistad cuando uno de ellos quiere acabar con la relación, con el drama que esto supone para ambos. </p> 
                 <p> <strong>Plataforma:</strong> Netflix</p>
             </div>
             <div>
                 <h3>Avatar: El camino del agua</h3>
-                <img src="./media/estreno2.jpg" alt="Poster avatar" width="300">
+                <img src="../media/estreno2.jpg" alt="Poster avatar" width="300">
                 <p>Ambientada más de una década después de los sucesos que tuvieron lugar en la primera película, la secuela narra la historia de la familia Sully (Jake, Neytiri y sus hijos), el peligro que los persigue, los esfuerzos que hacen para mantenerse a salvo, las batallas que libran para seguir con vida, y las tragedias que sobrellevan</p> 
                 <p> <strong>Plataforma:</strong> Disney +</p>
             </div>
@@ -68,20 +102,33 @@
                 <h3>Suscriptores por plataforma </h3>
             </div>
             <div>
-                <img src="./media/estadistica.png" alt="Estadisticas streaming" width="300">
+                <img src="../media/estadistica.png" alt="Estadisticas streaming" width="300">
             </div>
         </div>
     </main>
-    <footer>
-        <div>
-          <button class="buy-button"><a href="./compra.html" class="buy-button">Compra aquí</a></button>
+    <!-- Fin Contenido principal-->
+    <!-- Footer-->
+    <footer class="row pie">
+        <div class="col-sm">
+          <a href="./compra.html" class="buy-button">Compra aquí</a>
         </div>
-        <div>
+        <div class="col-sm">
           <a href="./suscribete.html" class="subscribe">Suscríbete</a>
         </div>
-        <div>
+        <div class="col-sm">
           <p class="date">Semana del <span>15</span> de <span>junio</span> del <span>2023</span></p>  
         </div>
     </footer>
-</body>
+    <!-- Links bootstrap popper y js-->
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

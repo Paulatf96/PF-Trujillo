@@ -3,38 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/291f37f473.js" crossorigin="anonymous"></script>
-    <link href="./styles.css" rel="stylesheet"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>All Top Five</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>All Top Five</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    /> <!-- link bootstrap -->
+    <link href="../estilos/styles2.css" rel="stylesheet">
 </head>
     <body>
-        <header class="cabecero">
-            <div >
-              <h1>All Top Five</h1>
-              <img id="logo" src="./media/camera.png" alt="camara" width="25px"  >
+        <!-- Header con navbar de bootstrap -->
+        <header class="cabecero col" styles>
+            <div class="brand">
+              <a href="../index.html"><h1>All Top Five</h1></a>
+              <a href="../index.html"><img id="logo" src="../media/camera.png" alt="camara" width="25px"  ></a>
             </div>
-            <nav class="navBar">
-              <ul>
-                <li> <a href="./index.html">Inicio</a></li>
-                <li> <a href="./netflix.html">Netflix</a></li>
-                <li> <a href="./hbomax.html">HBO max</a></li>
-                <li> <a href="./disney.html">Disney plus</a></li>
-                <li> <a href="./prime.html">Prime video</a></li>
-                <li> <a href="./recomienda.html">Recomienda</a></li>
-                <li> <a href="./suscribete.html">Suscríbete</a></li>
-                <li> <a href="./compra.html">Compra</a></li>
-              </ul>
+            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+              <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link"  href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./netflix.html">Netflix</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link "  href="./disney.html">Disney +</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./prime.html">Prime</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"  href="./hbomax.html">HBO max</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./recomienda.html">Recomienda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./suscribete.html">Suscríbete</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link  "  href="./compra.html">Compra</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
-          </header>
-        
+        </header> 
+        <!-- Fin Header -->
+        <!-- Contenido principal-->
         <main class="mainMovies">
             <div class="movies"> 
                 <h2>La caída (2022)</h2>
-                <img src="./media/prime1.jpg" alt="Poster La caída" width="200px">
+                <img src="../media/prime1.jpg" alt="Poster La caída" width="200px">
                 <button onclick="window.modal1.showModal();">Más info</button>
 
                 <dialog id="modal1">
@@ -45,12 +75,9 @@
                     <button onclick="window.modal1.close();">Volver</button>
                 </dialog>
             </div> 
-
-
-
             <div class="movies"> 
                 <h2>Argentina, 1985 (2022)</h2>
-                <img src="./media/prime2.jpg" alt="Poster la argentina" width="200px" >
+                <img src="../media/prime2.jpg" alt="Poster la argentina" width="200px" >
                 <button onclick="window.modal2.showModal();">Más info</button>
 
                 <dialog id="modal2">
@@ -64,7 +91,7 @@
 
             <div class="movies"> 
                 <h2>El Cover (2021)</h2>
-                <img src="./media/prime3.jpg" alt="Poster el cover" width="200px">
+                <img src="../media/prime3.jpg" alt="Poster el cover" width="200px">
                 <button onclick="window.modal3.showModal();">Más info</button>
 
                 <dialog id="modal3">
@@ -79,7 +106,7 @@
 
             <div class="movies"> 
                 <h2>El ascensor (2021)</h2>
-                <img src="./media/prime4.jpg" alt="Poster el ascensor" width="200px">
+                <img src="../media/prime4.jpg" alt="Poster el ascensor" width="200px">
                 <button onclick="window.modal4.showModal();">Más info</button>
 
                 <dialog id="modal4">
@@ -94,9 +121,8 @@
 
             <div class="movies"> 
                 <h2>Cold War (2018)</h2>
-                <img src="./media/prime5.jpg" alt="Poster cold war" width="200px">
+                <img src="../media/prime5.jpg" alt="Poster cold war" width="200px">
                 <button onclick="window.modal5.showModal();">Más info</button>
-
                 <dialog id="modal5">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/8ImvkXgGVWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <p>Dirección: Pawel Pawlikowski</p>
@@ -106,16 +132,29 @@
                 </dialog>
             </div> 
         </main>
-        <footer>
-            <div>
-              <button class="buy-button"><a href="./compra.html" class="buy-button">Compra aquí</a></button>
+        <!-- Fin Contenido principal-->
+        <!-- Footer-->
+        <footer class="row pie">
+            <div class="col-sm">
+              <a href="./compra.html" class="buy-button">Compra aquí</a>
             </div>
-            <div>
+            <div class="col-sm">
               <a href="./suscribete.html" class="subscribe">Suscríbete</a>
             </div>
-            <div>
+            <div class="col-sm">
               <p class="date">Semana del <span>15</span> de <span>junio</span> del <span>2023</span></p>  
             </div>
           </footer>
+        <!-- Links bootstrap - popper y js-->
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+        ></script>
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"
+        ></script>   
     </body>
 </html>

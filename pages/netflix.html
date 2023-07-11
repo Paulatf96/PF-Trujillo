@@ -6,7 +6,7 @@
     
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <title>All Top Five</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> <!-- link bootstrap -->
     <script src="https://kit.fontawesome.com/291f37f473.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
     <body>
       <div class="container-fluid">
         <div class="row">
+          <!-- Header con navbar de bootstrap -->
           <header class="cabecero col" styles>
             <div class="brand">
               <a href="../index.html"><h1>All Top Five</h1></a>
@@ -58,9 +59,9 @@
             </nav>
           </header>
         </div>
-
-          <main class="row mainMovies">
-              
+          <!-- Fin Header -->
+          <!-- Contenido principal-->
+          <main class="row mainMovies"> 
             <div id="movie1" class=" col-md-6 col-sm-12 card  movies" style="width: 13rem;">
               <img src="../media/netflix1.jpg" class="card-img-top" alt="Poster sin novedad en el frente">
               <div class="card-body">
@@ -69,7 +70,6 @@
                   <button onclick="window.modal1.showModal();"> » Ver más</button>
               </div> 
             </div>       
-              
             <dialog id="modal1">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/EBk1lXQ7rcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <p> <strong>Dirección:</strong> Edward Berger </p>
@@ -77,9 +77,6 @@
                     <p> La cinta se centra en la angustiosa experiencia de un joven soldado, enlistado en el ejército alemán, durante la Primera Guerra Mundial. Con el paso de los días, el estado de optimismo inicial de Paul Baümer, el protagonista, se torna en angustia al ver la cruda realidad de las trincheras. </p>
                     <button onclick="window.modal1.close();">Volver</button>
             </dialog>
-            
-
-            
             <div id="movie2" class="col-md-6 col-sm-12 card movies" style="width: 13rem;">
                 <img src="../media/netflix2.jpg" class="card-img-top" alt="Poster roma">
                 <div class="card-body">
@@ -88,7 +85,6 @@
                   <button onclick="window.modal2.showModal();">» Ver más</button>
                 </div>
             </div>
-
             <dialog id="modal2">
                       <iframe width="560" height="315" src="https://www.youtube.com/embed/6BS27ngZtxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       <p> <strong>Dirección:</strong> Alfonso Cuarón </p>
@@ -96,8 +92,6 @@
                       <p> En este filme original de Netflix, Alfonso Cuarón hace una emotiva fotografía, en blanco y negro, de la sociedad mexicana en los años 70. Cleo, su protagonista, es una empleada del hogar que trabaja para una familia de clase media-alta en Ciudad de México. </p>
                       <button onclick="window.modal2.close();">Volver</button>
             </dialog> 
-           
-
             <div id="movie3" class="col-md-6 col-sm-12 card  movies" style="width: 13rem;">
                   <img src="../media/netflix3.jpg" class="card-img-top" alt="Poster el extraño">
                   <div class="card-body">
@@ -106,7 +100,6 @@
                     <button onclick="window.modal2.showModal();">» Ver más</button>
                   </div>
             </div>
-
             <dialog id="modal3">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/baLjh8h3U8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <p><strong>Dirección:</strong> Thomas M. Wright</p>
@@ -114,8 +107,6 @@
                     <p>Esta película australiana, protagonizada por Joel Edgerton, es mucho más que un drama criminal usual. La cinta está basada en hechos reales y se entra en el caso de un policía infiltrado que tratará de mantener una estrecha relación con un sospechoso de asesinato para ganarse su confianza. </p>
                     <button onclick="window.modal3.close();">Volver</button>
             </dialog>
-            
-            
             <div id="movie4" class="col-md-6 col-sm-12 card movies" style="width: 13rem;">
                 <img src="../media/netflix4.jpg" class="card-img-top" alt="Poster el irlandes">
                 <div class="card-body">
@@ -124,7 +115,6 @@
                   <button onclick="window.modal2.showModal();">» Ver más</button>
                 </div>
             </div>
-
              <dialog id="modal4">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/B3cJXk9IaH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                   <p><strong>Dirección:</strong> Martin Scorsese</p>
@@ -132,7 +122,6 @@
                   <p>En esta epopeya sobre la mafia, Frank Sheera, veterano de la Segunda Guerra Mundial, narra su trabajo como sicario para algunos de los rostros más conocidos del siglo XX. </p>
                   <button onclick="window.modal4.close();">Volver</button>
             </dialog>
-          
             <div id="movie5" class="col-md-6 col-sm-12 card  movies" style="width: 13rem;">
                 <img src="../media/netflix5.jpg" class="card-img-top" alt="Poster historia de un matrimonio">
                 <div class="card-body">
@@ -141,7 +130,6 @@
                   <button onclick="window.modal2.showModal();">» Ver más</button>
                 </div>
             </div>
-
             <dialog id="modal5">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/pFg0Rk3L9SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                   <p><strong>Dirección:</strong> Noah Baumbach</p>
@@ -150,6 +138,8 @@
                   <button onclick="window.modal5.close();">Volver</button>
             </dialog> 
           </main>
+          <!-- Fin Contenido principal-->
+          <!-- Footer-->
           <footer class="row pie">
             <div class="col-sm">
               <a href="./compra.html" class="buy-button">Compra aquí</a>
@@ -162,6 +152,7 @@
             </div>
           </footer>
       </div>
+      <!-- Links bootstrap - popper y js-->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>  
     </body>
