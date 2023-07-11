@@ -1,162 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"
+    />
     <title>All Top Five</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
-    /> <!-- link bootstrap -->
-    <link href="../estilos/styles2.css" rel="stylesheet">
-</head>
-    <body>
-        <!-- Header con navbar de bootstrap -->
-        <header class="cabecero col" styles>
-            <div class="brand">
-              <a href="../index.html"><h1>All Top Five</h1></a>
-              <a href="../index.html"><img id="logo" src="../media/camera.png" alt="camara" width="25px"  ></a>
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
-              <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link"  href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./netflix.html">Netflix</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link "  href="./disney.html">Disney +</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./prime.html">Prime</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./hbomax.html">HBO max</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./recomienda.html">Recomienda</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./suscribete.html">Suscríbete</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link  "  href="./compra.html">Compra</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-        </header> 
-        <!-- Fin Header -->
-        <!-- Contenido principal-->
-        <main class="mainMovies">
-            <div class="movies"> 
-                <h2>Cinco lobitos (2022)</h2>
-                <img src="../media/hbo1.jpg" alt="Poster cinco lobitos" width="200px">
-                <button onclick="window.modal1.showModal();">Más info</button>
+    />
+    <!-- link bootstrap -->
+    <link href="../estilos/styles2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header con navbar de bootstrap -->
+    <header class="cabecero col" styles>
+      <div class="brand">
+        <a href="../index.html"><h1>All Top Five</h1></a>
+        <a href="../index.html"
+          ><img id="logo" src="../media/camera.png" alt="camara" width="25px"
+        /></a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./netflix.html">Netflix</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./disney.html">Disney +</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./prime.html">Prime</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./hbomax.html"
+                  >HBO max</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./recomienda.html">Recomienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./suscribete.html">Suscríbete</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./compra.html">Compra</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin Header -->
+    <!-- Contenido principal-->
+    <main class="mainMovies">
+      <div class="movies">
+        <h2>Cinco lobitos (2022)</h2>
+        <img src="../media/hbo1.jpg" alt="Poster cinco lobitos" width="200px" />
+        <button onclick="window.modal1.showModal();">Más info</button>
 
-                <dialog id="modal1">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/842A4lihGss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p> Dirección: Alauda Ruiz de Azúa.</p>
-                    <p> Género: Drama </p>
-                    <p>Un notable acercamiento al siempre completo tema de la maternidad que es, por méritos propios, una de las mejores películas del cine español de este 2022. La debutante Alauda Ruiz de Azúa sorprende con un enfoque honesto y sentido que acierta tanto mostrando el peso de la maternidad en una excelente Laia Costa como en su papel como hija y la relación que mantiene con una también estupenda Susi Sánchez.</p>
-                    <button onclick="window.modal1.close();">Volver</button>
-                </dialog>
-            </div> 
+        <dialog id="modal1">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/842A4lihGss"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Alauda Ruiz de Azúa.</p>
+          <p>Género: Drama</p>
+          <p>
+            Un notable acercamiento al siempre completo tema de la maternidad
+            que es, por méritos propios, una de las mejores películas del cine
+            español de este 2022. La debutante Alauda Ruiz de Azúa sorprende con
+            un enfoque honesto y sentido que acierta tanto mostrando el peso de
+            la maternidad en una excelente Laia Costa como en su papel como hija
+            y la relación que mantiene con una también estupenda Susi Sánchez.
+          </p>
+          <button onclick="window.modal1.close();">Volver</button>
+        </dialog>
+      </div>
 
+      <div class="movies">
+        <h2>DC Liga de Supermascotas (2023)</h2>
+        <img src="../media/hbo2.jpg" alt="Poster liga mascotas" width="200px" />
+        <button onclick="window.modal2.showModal();">Más info</button>
 
+        <dialog id="modal2">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/DHzpY0UO47w"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Jared Stern y Sam Levine</p>
+          <p>Género: Animado</p>
+          <p>
+            Los superhéroes nacieron como personas dirigidos a los más pequeños
+            de la casa, algo que ha ido perdiéndose con el paso del tiempo. Aquí
+            DC recupera ese espíritu con una simpática aventura que no le va a
+            cambiar la vida a nadie, pero sí que ofrece una generosa dosis de
+            diversión para toda la familia que invita a dejarse llevar y pasar
+            un rato sin pedirle peras al olmo.
+          </p>
+          <button onclick="window.modal2.close();">Volver</button>
+        </dialog>
+      </div>
 
-            <div class="movies"> 
-                <h2>DC Liga de Supermascotas (2023)</h2>
-                <img src="../media/hbo2.jpg" alt="Poster liga mascotas" width="200px" >
-                <button onclick="window.modal2.showModal();">Más info</button>
+      <div class="movies">
+        <h2>El método Williams (2021)</h2>
+        <img
+          src="../media/hbo3.jpg"
+          alt="Poster el metodo williams"
+          width="200px"
+        />
+        <button onclick="window.modal3.showModal();">Más info</button>
 
-                <dialog id="modal2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DHzpY0UO47w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p> Dirección: Jared Stern y Sam Levine </p>
-                    <p> Género: Animado </p>
-                    <p>Los superhéroes nacieron como personas dirigidos a los más pequeños de la casa, algo que ha ido perdiéndose con el paso del tiempo. Aquí DC recupera ese espíritu con una simpática aventura que no le va a cambiar la vida a nadie, pero sí que ofrece una generosa dosis de diversión para toda la familia que invita a dejarse llevar y pasar un rato sin pedirle peras al olmo.</p>
-                    <button onclick="window.modal2.close();">Volver</button>
-                </dialog>
-            </div> 
+        <dialog id="modal3">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/LJdOqzZdl5w"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Reinaldo Marcus Green</p>
+          <p>Género: Biográfica</p>
+          <p>
+            Biopic sobre Richard Williams, un padre inasequible que ayudó a
+            formar a dos de las deportistas más extraordinarias de todos los
+            tiempos, dos atletas que acabarían marcando época en el deporte del
+            tenis. Richard tenía una visión muy clara del futuro de sus hijas, y
+            sirviéndose de métodos arriesgados y poco convencionales, elaboró un
+            plan que llevaría a Venus y Serena Williams de las calles de
+            Compton, California, al olimpo del deporte, convirtiéndolas en
+            iconos del tenis.
+          </p>
+          <button onclick="window.modal3.close();">Volver</button>
+        </dialog>
+      </div>
 
-            <div class="movies"> 
-                <h2>El método Williams (2021)</h2>
-                <img src="../media/hbo3.jpg" alt="Poster el metodo williams" width="200px">
-                <button onclick="window.modal3.showModal();">Más info</button>
+      <div class="movies">
+        <h2>Elvis (2022)</h2>
+        <img src="../media/hbo4.jpg" alt="Poster Elvis" width="200px" />
+        <button onclick="window.modal4.showModal();">Más info</button>
 
-                <dialog id="modal3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LJdOqzZdl5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: Reinaldo Marcus Green</p>
-                    <p>Género: Biográfica </p>
-                    <p>Biopic sobre Richard Williams, un padre inasequible que ayudó a formar a dos de las deportistas más extraordinarias de todos los tiempos, dos atletas que acabarían marcando época en el deporte del tenis. Richard tenía una visión muy clara del futuro de sus hijas, y sirviéndose de métodos arriesgados y poco convencionales, elaboró un plan que llevaría a Venus y Serena Williams de las calles de Compton, California, al olimpo del deporte, convirtiéndolas en iconos del tenis.</p>
-                    <button onclick="window.modal3.close();">Volver</button>
-                </dialog>
-            </div> 
+        <dialog id="modal4">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/JoqmHAr3fu8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Baz Luhrmann</p>
+          <p>Género: Drama</p>
+          <p>
+            La película explora la vida y la música de Elvis Presley (Butler), y
+            su complicada relación con su enigmático agente, el coronel Tom
+            Parker (Hanks). La historia profundiza en la compleja dinámica entre
+            Presley y Parker que abarca más de 20 años, desde el ascenso de
+            Presley a la fama hasta su estrellato sin precedentes, en el
+            contexto del panorama cultural en los Estados Unidos. En el centro
+            de ese viaje se encuentra una de las personas más significativas e
+            influyentes en la vida de Elvis, Priscilla Presley (Olivia DeJonge).
+          </p>
+          <button onclick="window.modal4.close();">Volver</button>
+        </dialog>
+      </div>
 
-            <div class="movies"> 
-                <h2>Elvis (2022)</h2>
-                <img src="../media/hbo4.jpg" alt="Poster Elvis" width="200px">
-                <button onclick="window.modal4.showModal();">Más info</button>
+      <div class="movies">
+        <h2>The Batman (2022)</h2>
+        <img src="../media/hbo5.jpg" alt="Poster batman" width="200px" />
+        <button onclick="window.modal5.showModal();">Más info</button>
 
-                <dialog id="modal4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JoqmHAr3fu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: Baz Luhrmann</p>
-                    <p>Género: Drama </p>
-                    <p>La película explora la vida y la música de Elvis Presley (Butler), y su complicada relación con su enigmático agente, el coronel Tom Parker (Hanks). La historia profundiza en la compleja dinámica entre Presley y Parker que abarca más de 20 años, desde el ascenso de Presley a la fama hasta su estrellato sin precedentes, en el contexto del panorama cultural en los Estados Unidos. En el centro de ese viaje se encuentra una de las personas más significativas e influyentes en la vida de Elvis, Priscilla Presley (Olivia DeJonge).</p>
-                    <button onclick="window.modal4.close();">Volver</button>
-                </dialog>
-            </div> 
-
-            <div class="movies"> 
-                <h2>The Batman (2022)</h2>
-                <img src="../media/hbo5.jpg" alt="Poster batman" width="200px">
-                <button onclick="window.modal5.showModal();">Más info</button>
-
-                <dialog id="modal5">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fWQrd6cwJ0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: Matt Reeves</p>
-                    <p>Género: Thriller </p>
-                    <p>Después de dos años acechando por las calles de la ciudad como Batman (Robert Pattinson), e infundiendo miedo en las mentes perversas de los criminales, Bruce Wayne está sumido en las profundidades de las sombras de Gotham City. Este vigilante solitario cuenta con pocos aliados de confianza y eso le ha llevado a convertirse en la única encarnación de la venganza entre sus conciudadanos. Cuando un asesino apunta a la élite de Gotham con una serie de maquinaciones sádicas, un rastro de pistas crípticas lleva a Batman a realizar una investigación en el inframundo.</p>
-                    <button onclick="window.modal5.close();">Volver</button>
-                </dialog>
-            </div> 
-        </main>
-        <!-- Fin Contenido principal-->
-        <!-- Footer-->
-        <footer class="row pie">
-            <div class="col-sm">
-              <a href="./compra.html" class="buy-button">Compra aquí</a>
-            </div>
-            <div class="col-sm">
-              <a href="./suscribete.html" class="subscribe">Suscríbete</a>
-            </div>
-            <div class="col-sm">
-              <p class="date">Semana del <span>15</span> de <span>junio</span> del <span>2023</span></p>  
-            </div>
-          </footer>
-        <!-- Links bootstrap - popper y js-->
-        <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"
-        ></script>
-        <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-        crossorigin="anonymous"
-        ></script>   
-    </body>
+        <dialog id="modal5">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/fWQrd6cwJ0A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Matt Reeves</p>
+          <p>Género: Thriller</p>
+          <p>
+            Después de dos años acechando por las calles de la ciudad como
+            Batman (Robert Pattinson), e infundiendo miedo en las mentes
+            perversas de los criminales, Bruce Wayne está sumido en las
+            profundidades de las sombras de Gotham City. Este vigilante
+            solitario cuenta con pocos aliados de confianza y eso le ha llevado
+            a convertirse en la única encarnación de la venganza entre sus
+            conciudadanos. Cuando un asesino apunta a la élite de Gotham con una
+            serie de maquinaciones sádicas, un rastro de pistas crípticas lleva
+            a Batman a realizar una investigación en el inframundo.
+          </p>
+          <button onclick="window.modal5.close();">Volver</button>
+        </dialog>
+      </div>
+    </main>
+    <!-- Fin Contenido principal-->
+    <!-- Footer-->
+    <footer class="row pie">
+      <div class="col-sm">
+        <a href="./compra.html" class="buy-button">Compra aquí</a>
+      </div>
+      <div class="col-sm">
+        <a href="./suscribete.html" class="subscribe">Suscríbete</a>
+      </div>
+      <div class="col-sm">
+        <p class="date">
+          Semana del <span>15</span> de <span>junio</span> del <span>2023</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Links bootstrap - popper y js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

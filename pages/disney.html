@@ -1,163 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"
+    />
     <title>All Top Five</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
-    /> <!-- link bootstrap -->
-    <link href="../estilos/styles2.css" rel="stylesheet">   
-</head>
-    <body>
-        <!-- Header con navbar de bootstrap -->
-        <header class="cabecero col" styles>
-            <div class="brand">
-              <a href="../index.html"><h1>All Top Five</h1></a>
-              <a href="../index.html"><img id="logo" src="../media/camera.png" alt="camara" width="25px"  ></a>
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
-              <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link"  href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./netflix.html">Netflix</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link  active" aria-current="page" href="./disney.html">Disney +</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./prime.html">Prime</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./hbomax.html">HBO max</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./recomienda.html">Recomienda</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./suscribete.html">Suscríbete</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link  "  href="./compra.html">Compra</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-        </header> 
-        <!-- Fin Header -->
-        <!-- Contenido principal-->
-        <main class="mainMovies">
-            <div class="movies"> 
-                <h2>Raiders of the Lost Ark (1981)</h2>
-                <img src="../media/disney1.jpg" alt="Poster Raiders of the Lost Ark" width="200px">
-                <button onclick="window.modal1.showModal();">Más info</button>
+    />
+    <!-- link bootstrap -->
+    <link href="../estilos/styles2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header con navbar de bootstrap -->
+    <header class="cabecero col" styles>
+      <div class="brand">
+        <a href="../index.html"><h1>All Top Five</h1></a>
+        <a href="../index.html"
+          ><img id="logo" src="../media/camera.png" alt="camara" width="25px"
+        /></a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./netflix.html">Netflix</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./disney.html"
+                  >Disney +</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./prime.html">Prime</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./hbomax.html">HBO max</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./recomienda.html">Recomienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./suscribete.html">Suscríbete</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./compra.html">Compra</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin Header -->
+    <!-- Contenido principal-->
+    <main class="mainMovies">
+      <div class="movies">
+        <h2>Raiders of the Lost Ark (1981)</h2>
+        <img
+          src="../media/disney1.jpg"
+          alt="Poster Raiders of the Lost Ark"
+          width="200px"
+        />
+        <button onclick="window.modal1.showModal();">Más info</button>
 
-                <dialog id="modal1">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0xQSIdSRlAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p> Dirección: Steven Spielberg</p>
-                    <p> Género: Acción, Aventuras </p>
-                    <p>En preparación para la última aventura de Harrison Ford como Indiana Jones, Disney+ está agregando los amados clásicos de la serie. Dirigida por Steven Spielberg, Raiders of the Lost Ark marca el debut del aventurero favorito de los fanáticos que intenta evitar que las fuerzas nazis obtengan un tesoro peligroso.</p>
-                    <button onclick="window.modal1.close();">Volver</button>
-                </dialog>
-            </div> 
+        <dialog id="modal1">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/0xQSIdSRlAk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Steven Spielberg</p>
+          <p>Género: Acción, Aventuras</p>
+          <p>
+            En preparación para la última aventura de Harrison Ford como Indiana
+            Jones, Disney+ está agregando los amados clásicos de la serie.
+            Dirigida por Steven Spielberg, Raiders of the Lost Ark marca el
+            debut del aventurero favorito de los fanáticos que intenta evitar
+            que las fuerzas nazis obtengan un tesoro peligroso.
+          </p>
+          <button onclick="window.modal1.close();">Volver</button>
+        </dialog>
+      </div>
 
+      <div class="movies">
+        <h2>Free Guy (2021)</h2>
+        <img src="../media/disney2.jpg" alt="Poster free guy" width="200px" />
+        <button onclick="window.modal2.showModal();">Más info</button>
 
+        <dialog id="modal2">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/4y4bEdfqfSM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Shawn Levy</p>
+          <p>Género: Comedia, Aventuras, Ciencia Ficción</p>
+          <p>
+            Free Guy, uno de los éxitos teatrales sorpresa de 2021, adopta una
+            peculiar premisa de videojuego llena de rostros familiares de
+            Hollywood. Un cajero de banco llamado Guy, interpretado por Ryan
+            Reynolds, se da cuenta de que es un personaje no jugable en un
+            videojuego llamado Free City. A partir de ahí, se embarca en un
+            viaje salvaje junto a un jugador mientras intentan demostrar que el
+            director ejecutivo de una empresa de juegos robó el código fuente
+            del jugador para desarrollar Free City
+          </p>
+          <button onclick="window.modal2.close();">Volver</button>
+        </dialog>
+      </div>
 
-            <div class="movies"> 
-                <h2>Free Guy (2021)</h2>
-                <img src="../media/disney2.jpg" alt="Poster free guy" width="200px" >
-                <button onclick="window.modal2.showModal();">Más info</button>
+      <div class="movies">
+        <h2>Peter Pan & Wendy (2023)</h2>
+        <img
+          src="../media/disney3.jpg"
+          alt="Poster petter pan y wendy"
+          width="200px"
+        />
+        <button onclick="window.modal3.showModal();">Más info</button>
 
-                <dialog id="modal2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4y4bEdfqfSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: Shawn Levy </p>
-                    <p>Género: Comedia, Aventuras, Ciencia Ficción</p>
-                    <p>Free Guy, uno de los éxitos teatrales sorpresa de 2021, adopta una peculiar premisa de videojuego llena de rostros familiares de Hollywood. Un cajero de banco llamado Guy, interpretado por Ryan Reynolds, se da cuenta de que es un personaje no jugable en un videojuego llamado Free City. A partir de ahí, se embarca en un viaje salvaje junto a un jugador mientras intentan demostrar que el director ejecutivo de una empresa de juegos robó el código fuente del jugador para desarrollar Free City</p>
-                    <button onclick="window.modal2.close();">Volver</button>
-                </dialog>
-            </div> 
+        <dialog id="modal3">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/GISA8oez0NM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: David Lowery</p>
+          <p>Género: Aventuras, Fantasía, Familiar</p>
+          <p>
+            Disney ha contado un montón de veces la clásica e interminable
+            historia de J.M. Barrie, pero nunca antes con el mismo enfoque en la
+            relación entre Peter Pan (Alexander Molony) y Wendy Darling (Ever
+            Anderson). Es la misma historia clásica de una niña y sus hermanos
+            que tienen miedo de dejar el hogar de su infancia, y prefieren
+            seguir al eterno niño Peter Pan y su amiga hada Tinker Bell (Yara
+            Shahidi) de regreso al País de Nunca Jamás. Allí, se enfrentan al
+            malvado Capitán Garfio (Jude Law) y se embarcan en una aventura que
+            les cambiará la vida.
+          </p>
+          <button onclick="window.modal3.close();">Volver</button>
+        </dialog>
+      </div>
 
-            <div class="movies"> 
-                <h2>Peter Pan & Wendy (2023)</h2>
-                <img src="../media/disney3.jpg" alt="Poster petter pan y wendy" width="200px">
-                <button onclick="window.modal3.showModal();">Más info</button>
+      <div class="movies">
+        <h2>Crater (2023)</h2>
+        <img src="../media/disney4.jpg" alt="Poster crater" width="200px" />
+        <button onclick="window.modal4.showModal();">Más info</button>
 
-                <dialog id="modal3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GISA8oez0NM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: David Lowery</p>
-                    <p>Género: Aventuras, Fantasía, Familiar </p>
-                    <p>Disney ha contado un montón de veces la clásica e interminable historia de J.M. Barrie, pero nunca antes con el mismo enfoque en la relación entre Peter Pan (Alexander Molony) y Wendy Darling (Ever Anderson).
-                        Es la misma historia clásica de una niña y sus hermanos que tienen miedo de dejar el hogar de su infancia, y prefieren seguir al eterno niño Peter Pan y su amiga hada Tinker Bell (Yara Shahidi) de regreso al País de Nunca Jamás. Allí, se enfrentan al malvado Capitán Garfio (Jude Law) y se embarcan en una aventura que les cambiará la vida.</p>
-                    <button onclick="window.modal3.close();">Volver</button>
-                </dialog>
-            </div> 
+        <dialog id="modal4">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/hKtjAcWlJMM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Kyle Patrick Alvarez</p>
+          <p>Género: Aventuras, Ciencia Ficción, Familiar</p>
+          <p>
+            Este nuevo original de Disney+ cuenta la historia de Caleb Channing
+            (Isaiah Russell-Bailey), que vive en 2257 en una colonia minera
+            lunar. Sin embargo, después de la muerte de su padre (Scott
+            Mescudi), Caleb será reubicado permanentemente en un idílico planeta
+            lejano.
+          </p>
+          <button onclick="window.modal4.close();">Volver</button>
+        </dialog>
+      </div>
 
-            <div class="movies"> 
-                <h2>Crater (2023)</h2>
-                <img src="../media/disney4.jpg" alt="Poster crater" width="200px">
-                <button onclick="window.modal4.showModal();">Más info</button>
+      <div class="movies">
+        <h2>Black Panther: Wakanda Forever (2022)</h2>
+        <img src="../media/disney5.jpg" alt="Poster Wakanda" width="200px" />
+        <button onclick="window.modal5.showModal();">Más info</button>
 
-                <dialog id="modal4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hKtjAcWlJMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: Kyle Patrick Alvarez</p>
-                    <p>Género: Aventuras, Ciencia Ficción, Familiar </p>
-                    <p>Este nuevo original de Disney+ cuenta la historia de Caleb Channing (Isaiah Russell-Bailey), que vive en 2257 en una colonia minera lunar. Sin embargo, después de la muerte de su padre (Scott Mescudi), Caleb será reubicado permanentemente en un idílico planeta lejano.</p>
-                    <button onclick="window.modal4.close();">Volver</button>
-                </dialog>
-            </div> 
-
-            <div class="movies"> 
-                <h2>Black Panther: Wakanda Forever (2022)</h2>
-                <img src="../media/disney5.jpg" alt="Poster Wakanda" width="200px">
-                <button onclick="window.modal5.showModal();">Más info</button>
-
-                <dialog id="modal5">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/INvxJD4FzLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: Ryan Coogler</p>
-                    <p>Género: Acción, Aventuras, Ciencia Ficción </p>
-                    <p>Tras la muerte del rey T’Challa, los poderes restantes de Wakanda deben unirse para protegerse de la imponente amenaza del rey Namor de Talokan, una antigua civilización submarina. Reforzado por una gran actuación de un elenco conjunto –especialmente poderosa en el caso de Angela Bassett– Black Panther: Wakanda Forever sirve como una despedida conmovedora que simultáneamente se construye hacia el futuro.</p>
-                    <button onclick="window.modal5.close();">Volver</button>
-                </dialog>
-            </div> 
-        </main>
-        <!-- Fin Contenido principal-->
-        <!-- Footer-->
-        <footer class="row pie">
-            <div class="col-sm">
-              <a href="./compra.html" class="buy-button">Compra aquí</a>
-            </div>
-            <div class="col-sm">
-              <a href="./suscribete.html" class="subscribe">Suscríbete</a>
-            </div>
-            <div class="col-sm">
-              <p class="date">Semana del <span>15</span> de <span>junio</span> del <span>2023</span></p>  
-            </div>
-          </footer>
-        <!-- Links bootstrap - popper y js-->
-        <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-        crossorigin="anonymous"
-      ></script>
-    </body>
+        <dialog id="modal5">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/INvxJD4FzLk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Ryan Coogler</p>
+          <p>Género: Acción, Aventuras, Ciencia Ficción</p>
+          <p>
+            Tras la muerte del rey T’Challa, los poderes restantes de Wakanda
+            deben unirse para protegerse de la imponente amenaza del rey Namor
+            de Talokan, una antigua civilización submarina. Reforzado por una
+            gran actuación de un elenco conjunto –especialmente poderosa en el
+            caso de Angela Bassett– Black Panther: Wakanda Forever sirve como
+            una despedida conmovedora que simultáneamente se construye hacia el
+            futuro.
+          </p>
+          <button onclick="window.modal5.close();">Volver</button>
+        </dialog>
+      </div>
+    </main>
+    <!-- Fin Contenido principal-->
+    <!-- Footer-->
+    <footer class="row pie">
+      <div class="col-sm">
+        <a href="./compra.html" class="buy-button">Compra aquí</a>
+      </div>
+      <div class="col-sm">
+        <a href="./suscribete.html" class="subscribe">Suscríbete</a>
+      </div>
+      <div class="col-sm">
+        <p class="date">
+          Semana del <span>15</span> de <span>junio</span> del <span>2023</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Links bootstrap - popper y js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

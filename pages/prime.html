@@ -1,160 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"
+    />
     <title>All Top Five</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
-    /> <!-- link bootstrap -->
-    <link href="../estilos/styles2.css" rel="stylesheet">
-</head>
-    <body>
-        <!-- Header con navbar de bootstrap -->
-        <header class="cabecero col" styles>
-            <div class="brand">
-              <a href="../index.html"><h1>All Top Five</h1></a>
-              <a href="../index.html"><img id="logo" src="../media/camera.png" alt="camara" width="25px"  ></a>
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
-              <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link"  href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./netflix.html">Netflix</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link "  href="./disney.html">Disney +</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./prime.html">Prime</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"  href="./hbomax.html">HBO max</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./recomienda.html">Recomienda</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./suscribete.html">Suscríbete</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link  "  href="./compra.html">Compra</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-        </header> 
-        <!-- Fin Header -->
-        <!-- Contenido principal-->
-        <main class="mainMovies">
-            <div class="movies"> 
-                <h2>La caída (2022)</h2>
-                <img src="../media/prime1.jpg" alt="Poster La caída" width="200px">
-                <button onclick="window.modal1.showModal();">Más info</button>
+    />
+    <!-- link bootstrap -->
+    <link href="../estilos/styles2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header con navbar de bootstrap -->
+    <header class="cabecero col" styles>
+      <div class="brand">
+        <a href="../index.html"><h1>All Top Five</h1></a>
+        <a href="../index.html"
+          ><img id="logo" src="../media/camera.png" alt="camara" width="25px"
+        /></a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./netflix.html">Netflix</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./disney.html">Disney +</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./prime.html"
+                  >Prime</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./hbomax.html">HBO max</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./recomienda.html">Recomienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./suscribete.html">Suscríbete</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./compra.html">Compra</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin Header -->
+    <!-- Contenido principal-->
+    <main class="mainMovies">
+      <div class="movies">
+        <h2>La caída (2022)</h2>
+        <img src="../media/prime1.jpg" alt="Poster La caída" width="200px" />
+        <button onclick="window.modal1.showModal();">Más info</button>
 
-                <dialog id="modal1">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iSo7H2jERnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: Lucía Puenzo</p>
-                    <p>Género  Drama</p>
-                    <p>Es una película que se adentra en el tema de los abusos sexuales a través de la experiencia de Mariel. Esta mujer es una clavadista experimentada que está a punto de alcanzar el sueño Olímpico. Pronto descubre que su entrenador, el cual también es su pareja, ha abusado de varias mujeres. Esto la hace enfrentarse a uno de los momentos más duros de su vida y su carrera deportiva, que la harán pensar acerca de su sueño.</p>
-                    <button onclick="window.modal1.close();">Volver</button>
-                </dialog>
-            </div> 
-            <div class="movies"> 
-                <h2>Argentina, 1985 (2022)</h2>
-                <img src="../media/prime2.jpg" alt="Poster la argentina" width="200px" >
-                <button onclick="window.modal2.showModal();">Más info</button>
+        <dialog id="modal1">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/iSo7H2jERnE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Lucía Puenzo</p>
+          <p>Género Drama</p>
+          <p>
+            Es una película que se adentra en el tema de los abusos sexuales a
+            través de la experiencia de Mariel. Esta mujer es una clavadista
+            experimentada que está a punto de alcanzar el sueño Olímpico. Pronto
+            descubre que su entrenador, el cual también es su pareja, ha abusado
+            de varias mujeres. Esto la hace enfrentarse a uno de los momentos
+            más duros de su vida y su carrera deportiva, que la harán pensar
+            acerca de su sueño.
+          </p>
+          <button onclick="window.modal1.close();">Volver</button>
+        </dialog>
+      </div>
+      <div class="movies">
+        <h2>Argentina, 1985 (2022)</h2>
+        <img
+          src="../media/prime2.jpg"
+          alt="Poster la argentina"
+          width="200px"
+        />
+        <button onclick="window.modal2.showModal();">Más info</button>
 
-                <dialog id="modal2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EDK2FtU5oxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: Santiago Mitre </p>
-                    <p>Género: Thriller</p>
-                    <p>Este drama argentino se adentra en el conocido como Juicio a las Juntas Militares, que tuvo lugar en 1985. La historia se centra en la experiencia del fiscal Julio Strassera, Luis Moreno Ocampo, y otros miembros de su equipo se atrevieron a investigar a toda costa a altos cargos de la dictadura.</p>
-                    <button onclick="window.modal2.close();">Volver</button>
-                </dialog>
-            </div> 
+        <dialog id="modal2">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/EDK2FtU5oxg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Santiago Mitre</p>
+          <p>Género: Thriller</p>
+          <p>
+            Este drama argentino se adentra en el conocido como Juicio a las
+            Juntas Militares, que tuvo lugar en 1985. La historia se centra en
+            la experiencia del fiscal Julio Strassera, Luis Moreno Ocampo, y
+            otros miembros de su equipo se atrevieron a investigar a toda costa
+            a altos cargos de la dictadura.
+          </p>
+          <button onclick="window.modal2.close();">Volver</button>
+        </dialog>
+      </div>
 
-            <div class="movies"> 
-                <h2>El Cover (2021)</h2>
-                <img src="../media/prime3.jpg" alt="Poster el cover" width="200px">
-                <button onclick="window.modal3.showModal();">Más info</button>
+      <div class="movies">
+        <h2>El Cover (2021)</h2>
+        <img src="../media/prime3.jpg" alt="Poster el cover" width="200px" />
+        <button onclick="window.modal3.showModal();">Más info</button>
 
-                <dialog id="modal3">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1iPcdvZZ7pY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección:  Secun De La Rosa</p>
-                    <p>Género: Musical </p>
-                    <p>Dani es un muchacho que ama la música, le gustaría dedicarse a ella, pero tiene miedo a fracasar.
-                       Ahora Dani se dedica a trabajar en un bar de Benidorm como camarero. Todo cambia cuando conoce a Sandra, una joven artista que se dedica a rendir tributo a grandes bandas y quien le hará ver otras formas de ver el arte.</p>
-                    <button onclick="window.modal3.close();">Volver</button>
-                </dialog>
-            </div> 
+        <dialog id="modal3">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1iPcdvZZ7pY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Secun De La Rosa</p>
+          <p>Género: Musical</p>
+          <p>
+            Dani es un muchacho que ama la música, le gustaría dedicarse a ella,
+            pero tiene miedo a fracasar. Ahora Dani se dedica a trabajar en un
+            bar de Benidorm como camarero. Todo cambia cuando conoce a Sandra,
+            una joven artista que se dedica a rendir tributo a grandes bandas y
+            quien le hará ver otras formas de ver el arte.
+          </p>
+          <button onclick="window.modal3.close();">Volver</button>
+        </dialog>
+      </div>
 
-            <div class="movies"> 
-                <h2>El ascensor (2021)</h2>
-                <img src="../media/prime4.jpg" alt="Poster el ascensor" width="200px">
-                <button onclick="window.modal4.showModal();">Más info</button>
+      <div class="movies">
+        <h2>El ascensor (2021)</h2>
+        <img src="../media/prime4.jpg" alt="Poster el ascensor" width="200px" />
+        <button onclick="window.modal4.showModal();">Más info</button>
 
-                <dialog id="modal4">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rQhZi9dDu0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: Daniel Bernal</p>
-                    <p>Género: Ciencia ficción</p>
-                    <p>Esta película planteada como un bucle temporal, en realidad, es una divertida introspección sobre las relaciones de pareja.
-                        Tras una fuerte discusión, Sito y Ana, una pareja aparentemente feliz, se quedan encerrados en un elevador. Están condenados a repetir una y otra vez las mismas acciones mientras el ascensor baja y una y otra vez desde la planta 0 al 10, y al revés. Pronto, descubren que la única solución para salir de allí radica en solucionar sus diferencias.</p>
-                    <button onclick="window.modal4.close();">Volver</button>
-                </dialog>
-            </div> 
+        <dialog id="modal4">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/rQhZi9dDu0o"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Daniel Bernal</p>
+          <p>Género: Ciencia ficción</p>
+          <p>
+            Esta película planteada como un bucle temporal, en realidad, es una
+            divertida introspección sobre las relaciones de pareja. Tras una
+            fuerte discusión, Sito y Ana, una pareja aparentemente feliz, se
+            quedan encerrados en un elevador. Están condenados a repetir una y
+            otra vez las mismas acciones mientras el ascensor baja y una y otra
+            vez desde la planta 0 al 10, y al revés. Pronto, descubren que la
+            única solución para salir de allí radica en solucionar sus
+            diferencias.
+          </p>
+          <button onclick="window.modal4.close();">Volver</button>
+        </dialog>
+      </div>
 
-            <div class="movies"> 
-                <h2>Cold War (2018)</h2>
-                <img src="../media/prime5.jpg" alt="Poster cold war" width="200px">
-                <button onclick="window.modal5.showModal();">Más info</button>
-                <dialog id="modal5">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8ImvkXgGVWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p>Dirección: Pawel Pawlikowski</p>
-                    <p>Género: Drama</p>
-                    <p>Wintor y Zola se conocen en Polonia poco después de terminar la Segunda Guerra Mundial. Ambos tienen caracteres muy dispares, pero se enamoran casi de inmediato. Pronto, sus orientaciones políticas terminan distanciándolos, aunque en destino se empeña en unirlos.</p>
-                    <button onclick="window.modal5.close();">Volver</button>
-                </dialog>
-            </div> 
-        </main>
-        <!-- Fin Contenido principal-->
-        <!-- Footer-->
-        <footer class="row pie">
-            <div class="col-sm">
-              <a href="./compra.html" class="buy-button">Compra aquí</a>
-            </div>
-            <div class="col-sm">
-              <a href="./suscribete.html" class="subscribe">Suscríbete</a>
-            </div>
-            <div class="col-sm">
-              <p class="date">Semana del <span>15</span> de <span>junio</span> del <span>2023</span></p>  
-            </div>
-          </footer>
-        <!-- Links bootstrap - popper y js-->
-        <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"
-        ></script>
-        <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-        crossorigin="anonymous"
-        ></script>   
-    </body>
+      <div class="movies">
+        <h2>Cold War (2018)</h2>
+        <img src="../media/prime5.jpg" alt="Poster cold war" width="200px" />
+        <button onclick="window.modal5.showModal();">Más info</button>
+        <dialog id="modal5">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8ImvkXgGVWw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <p>Dirección: Pawel Pawlikowski</p>
+          <p>Género: Drama</p>
+          <p>
+            Wintor y Zola se conocen en Polonia poco después de terminar la
+            Segunda Guerra Mundial. Ambos tienen caracteres muy dispares, pero
+            se enamoran casi de inmediato. Pronto, sus orientaciones políticas
+            terminan distanciándolos, aunque en destino se empeña en unirlos.
+          </p>
+          <button onclick="window.modal5.close();">Volver</button>
+        </dialog>
+      </div>
+    </main>
+    <!-- Fin Contenido principal-->
+    <!-- Footer-->
+    <footer class="row pie">
+      <div class="col-sm">
+        <a href="./compra.html" class="buy-button">Compra aquí</a>
+      </div>
+      <div class="col-sm">
+        <a href="./suscribete.html" class="subscribe">Suscríbete</a>
+      </div>
+      <div class="col-sm">
+        <p class="date">
+          Semana del <span>15</span> de <span>junio</span> del <span>2023</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Links bootstrap - popper y js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
