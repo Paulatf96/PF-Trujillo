@@ -24,6 +24,8 @@
     <link href="../estilos/styles2.css" rel="stylesheet" />
   </head>
   <body>
+   <div class="container-fluid">
+    <div class="row">
     <!-- Header con navbar de bootstrap -->
     <header class="cabecero col" styles>
       <div class="brand">
@@ -81,13 +83,26 @@
         </div>
       </nav>
     </header>
+  </div>
     <!-- Fin Header -->
     <!-- Contenido principal-->
-    <main class="mainMovies">
-      <div class="movies">
-        <h2>Cinco lobitos (2022)</h2>
-        <img src="../media/hbo1.jpg" alt="Poster cinco lobitos" width="200px" />
-        <button onclick="window.modal1.showModal();">Más info</button>
+    <main class="row mainMovies">
+      <div
+      id="movie1"
+      class="col-md-6 col-sm-12 card movies"
+      style="width: 13rem"
+    >
+      <img
+        src="../media/hbo1.jpg"
+        class="card-img-top"
+        alt="Poster Cinco lobitos"
+      />
+      <div class="card-body">
+        <h6 class="card-title">Cinco lobitos</h6>
+        <p class="card-text">(2022)</p>
+        <button onclick="window.modal1.showModal();">» Ver más</button>
+      </div>
+    </div>
 
         <dialog id="modal1">
           <iframe
@@ -99,8 +114,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <p>Dirección: Alauda Ruiz de Azúa.</p>
-          <p>Género: Drama</p>
+          <p><strong>Dirección:</strong> Alauda Ruiz de Azúa.</p>
+          <p><strong>Género:</strong> Drama</p>
           <p>
             Un notable acercamiento al siempre completo tema de la maternidad
             que es, por méritos propios, una de las mejores películas del cine
@@ -111,12 +126,23 @@
           </p>
           <button onclick="window.modal1.close();">Volver</button>
         </dialog>
+     
+        <div
+        id="movie2"
+        class="col-md-6 col-sm-12 card movies"
+        style="width: 13rem"
+      >
+        <img
+          src="../media/hbo2.jpg"
+          class="card-img-top"
+          alt="Poster DC Liga de Supermascotas"
+        />
+        <div class="card-body">
+          <h6 class="card-title">DC Liga de Supermascotas</h6>
+          <p class="card-text">(2023)</p>
+          <button onclick="window.modal2.showModal();">» Ver más</button>
+        </div>
       </div>
-
-      <div class="movies">
-        <h2>DC Liga de Supermascotas (2023)</h2>
-        <img src="../media/hbo2.jpg" alt="Poster liga mascotas" width="200px" />
-        <button onclick="window.modal2.showModal();">Más info</button>
 
         <dialog id="modal2">
           <iframe
@@ -128,8 +154,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <p>Dirección: Jared Stern y Sam Levine</p>
-          <p>Género: Animado</p>
+          <p><strong>Dirección:</strong> Jared Stern y Sam Levine</p>
+          <p><strong>Género:</strong> Animado</p>
           <p>
             Los superhéroes nacieron como personas dirigidos a los más pequeños
             de la casa, algo que ha ido perdiéndose con el paso del tiempo. Aquí
@@ -140,16 +166,23 @@
           </p>
           <button onclick="window.modal2.close();">Volver</button>
         </dialog>
-      </div>
-
-      <div class="movies">
-        <h2>El método Williams (2021)</h2>
+     
+        <div
+        id="movie3"
+        class="col-md-6 col-sm-12 card movies"
+        style="width: 13rem"
+      >
         <img
           src="../media/hbo3.jpg"
-          alt="Poster el metodo williams"
-          width="200px"
+          class="card-img-top"
+          alt="Poster El método Williams"
         />
-        <button onclick="window.modal3.showModal();">Más info</button>
+        <div class="card-body">
+          <h6 class="card-title">El método Williams</h6>
+          <p class="card-text">(2021)</p>
+          <button onclick="window.modal3.showModal();">» Ver más</button>
+        </div>
+      </div>
 
         <dialog id="modal3">
           <iframe
@@ -161,8 +194,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <p>Dirección: Reinaldo Marcus Green</p>
-          <p>Género: Biográfica</p>
+          <p><strong>Dirección:</strong> Reinaldo Marcus Green</p>
+          <p><strong>Género:</strong> Biográfica</p>
           <p>
             Biopic sobre Richard Williams, un padre inasequible que ayudó a
             formar a dos de las deportistas más extraordinarias de todos los
@@ -175,12 +208,23 @@
           </p>
           <button onclick="window.modal3.close();">Volver</button>
         </dialog>
+     
+        <div
+        id="movie4"
+        class="col-md-6 col-sm-12 card movies"
+        style="width: 13rem"
+      >
+        <img
+          src="../media/hbo4.jpg"
+          class="card-img-top"
+          alt="Poster Elvis"
+        />
+        <div class="card-body">
+          <h6 class="card-title">Elvis</h6>
+          <p class="card-text">(2022)</p>
+          <button onclick="window.modal4.showModal();">» Ver más</button>
+        </div>
       </div>
-
-      <div class="movies">
-        <h2>Elvis (2022)</h2>
-        <img src="../media/hbo4.jpg" alt="Poster Elvis" width="200px" />
-        <button onclick="window.modal4.showModal();">Más info</button>
 
         <dialog id="modal4">
           <iframe
@@ -192,8 +236,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <p>Dirección: Baz Luhrmann</p>
-          <p>Género: Drama</p>
+          <p><strong>Dirección:</strong> Baz Luhrmann</p>
+          <p><strong>Género:</strong> Drama</p>
           <p>
             La película explora la vida y la música de Elvis Presley (Butler), y
             su complicada relación con su enigmático agente, el coronel Tom
@@ -206,12 +250,23 @@
           </p>
           <button onclick="window.modal4.close();">Volver</button>
         </dialog>
+      
+        <div
+        id="movie5"
+        class="col-md-6 col-sm-12 card movies"
+        style="width: 13rem"
+      >
+        <img
+          src="../media/hbo5.jpg"
+          class="card-img-top"
+          alt="Poster The Batman"
+        />
+        <div class="card-body">
+          <h6 class="card-title">The Batman</h6>
+          <p class="card-text">(2022)</p>
+          <button onclick="window.modal5.showModal();">» Ver más</button>
+        </div>
       </div>
-
-      <div class="movies">
-        <h2>The Batman (2022)</h2>
-        <img src="../media/hbo5.jpg" alt="Poster batman" width="200px" />
-        <button onclick="window.modal5.showModal();">Más info</button>
 
         <dialog id="modal5">
           <iframe
@@ -223,8 +278,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <p>Dirección: Matt Reeves</p>
-          <p>Género: Thriller</p>
+          <p><strong>Dirección:</strong> Matt Reeves</p>
+          <p><strong>Género:</strong> Thriller</p>
           <p>
             Después de dos años acechando por las calles de la ciudad como
             Batman (Robert Pattinson), e infundiendo miedo en las mentes
@@ -238,7 +293,7 @@
           </p>
           <button onclick="window.modal5.close();">Volver</button>
         </dialog>
-      </div>
+      
     </main>
     <!-- Fin Contenido principal-->
     <!-- Footer-->
@@ -255,6 +310,7 @@
         </p>
       </div>
     </footer>
+    </div> 
     <!-- Links bootstrap - popper y js-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

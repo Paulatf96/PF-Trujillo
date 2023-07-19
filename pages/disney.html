@@ -8,12 +8,6 @@
       content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"
     />
     <title>All Top Five</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap"
-      rel="stylesheet"
-    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,77 +15,101 @@
       crossorigin="anonymous"
     />
     <!-- link bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@300&family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
     <link href="../estilos/styles2.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Header con navbar de bootstrap -->
-    <header class="cabecero col" styles>
-      <div class="brand">
-        <a href="../index.html"><h1>All Top Five</h1></a>
-        <a href="../index.html"
-          ><img id="logo" src="../media/camera.png" alt="camara" width="25px"
-        /></a>
-      </div>
-      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Header con navbar de bootstrap -->
+        <header class="cabecero col" styles>
+          <div class="brand">
+            <a href="../index.html"><h1>All Top Five</h1></a>
+            <a href="../index.html"
+              ><img
+                id="logo"
+                src="../media/camera.png"
+                alt="camara"
+                width="25px"
+            /></a>
+          </div>
+          <nav
+            class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./netflix.html">Netflix</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./disney.html"
-                  >Disney +</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./prime.html">Prime</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./hbomax.html">HBO max</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./recomienda.html">Recomienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./suscribete.html">Suscríbete</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./compra.html">Compra</a>
-              </li>
-            </ul>
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./netflix.html">Netflix</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="./disney.html"
+                      >Disney +</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./prime.html">Prime</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./hbomax.html">HBO max</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./recomienda.html">Recomienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./suscribete.html">Suscríbete</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./compra.html">Compra</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <!-- Fin Header -->
+
+      <!-- Contenido principal-->
+      <main class="row mainMovies">
+        <div
+          id="movie1"
+          class="col-md-6 col-sm-12 card movies"
+          style="width: 13rem"
+        >
+          <img
+            src="../media/disney1.jpg"
+            class="card-img-top"
+            alt="Poster Raiders of the Lost Ark"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Raiders of the Lost Ark</h6>
+            <p class="card-text">(1981)</p>
+            <button onclick="window.modal1.showModal();">» Ver más</button>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- Fin Header -->
-    <!-- Contenido principal-->
-    <main class="mainMovies">
-      <div class="movies">
-        <h2>Raiders of the Lost Ark (1981)</h2>
-        <img
-          src="../media/disney1.jpg"
-          alt="Poster Raiders of the Lost Ark"
-          width="200px"
-        />
-        <button onclick="window.modal1.showModal();">Más info</button>
 
         <dialog id="modal1">
           <iframe
@@ -103,8 +121,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <p>Dirección: Steven Spielberg</p>
-          <p>Género: Acción, Aventuras</p>
+          <p><strong>Dirección:</strong> Steven Spielberg</p>
+          <p><strong>Género:</strong> Acción, Aventuras</p>
           <p>
             En preparación para la última aventura de Harrison Ford como Indiana
             Jones, Disney+ está agregando los amados clásicos de la serie.
@@ -114,13 +132,23 @@
           </p>
           <button onclick="window.modal1.close();">Volver</button>
         </dialog>
-      </div>
 
-      <div class="movies">
-        <h2>Free Guy (2021)</h2>
-        <img src="../media/disney2.jpg" alt="Poster free guy" width="200px" />
-        <button onclick="window.modal2.showModal();">Más info</button>
-
+        <div
+          id="movie2"
+          class="col-md-6 col-sm-12 card movies"
+          style="width: 13rem"
+        >
+          <img
+            src="../media/disney2.jpg"
+            class="card-img-top"
+            alt="Poster free guy"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Free Guy</h6>
+            <p class="card-text">(2021)</p>
+            <button onclick="window.modal2.showModal();">» Ver más</button>
+          </div>
+        </div>
         <dialog id="modal2">
           <iframe
             width="560"
@@ -131,8 +159,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <p>Dirección: Shawn Levy</p>
-          <p>Género: Comedia, Aventuras, Ciencia Ficción</p>
+          <p><strong>Dirección:</strong> Shawn Levy</p>
+          <p><strong>Género:</strong> Comedia, Aventuras, Ciencia Ficción</p>
           <p>
             Free Guy, uno de los éxitos teatrales sorpresa de 2021, adopta una
             peculiar premisa de videojuego llena de rostros familiares de
@@ -145,16 +173,23 @@
           </p>
           <button onclick="window.modal2.close();">Volver</button>
         </dialog>
-      </div>
 
-      <div class="movies">
-        <h2>Peter Pan & Wendy (2023)</h2>
-        <img
-          src="../media/disney3.jpg"
-          alt="Poster petter pan y wendy"
-          width="200px"
-        />
-        <button onclick="window.modal3.showModal();">Más info</button>
+        <div
+          id="movie3"
+          class="col-md-6 col-sm-12 card movies"
+          style="width: 13rem"
+        >
+          <img
+            src="../media/disney3.jpg"
+            class="card-img-top"
+            alt="Poster petter pan y wendy"
+          />
+          <div class="card-body">
+            <h6 class="card-title">petter pan y wendy</h6>
+            <p class="card-text">(2023)</p>
+            <button onclick="window.modal3.showModal();">» Ver más</button>
+          </div>
+        </div>
 
         <dialog id="modal3">
           <iframe
@@ -166,8 +201,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <p>Dirección: David Lowery</p>
-          <p>Género: Aventuras, Fantasía, Familiar</p>
+          <p><strong>Dirección:</strong> David Lowery</p>
+          <p><strong>Género:</strong> Aventuras, Fantasía, Familiar</p>
           <p>
             Disney ha contado un montón de veces la clásica e interminable
             historia de J.M. Barrie, pero nunca antes con el mismo enfoque en la
@@ -181,13 +216,23 @@
           </p>
           <button onclick="window.modal3.close();">Volver</button>
         </dialog>
-      </div>
 
-      <div class="movies">
-        <h2>Crater (2023)</h2>
-        <img src="../media/disney4.jpg" alt="Poster crater" width="200px" />
-        <button onclick="window.modal4.showModal();">Más info</button>
-
+        <div
+          id="movie4"
+          class="col-md-6 col-sm-12 card movies"
+          style="width: 13rem"
+        >
+          <img
+            src="../media/disney4.jpg"
+            class="card-img-top"
+            alt="Poster Crater"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Crater</h6>
+            <p class="card-text">(2023)</p>
+            <button onclick="window.modal4.showModal();">» Ver más</button>
+          </div>
+        </div>
         <dialog id="modal4">
           <iframe
             width="560"
@@ -198,8 +243,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <p>Dirección: Kyle Patrick Alvarez</p>
-          <p>Género: Aventuras, Ciencia Ficción, Familiar</p>
+          <p><strong>Dirección:</strong> Kyle Patrick Alvarez</p>
+          <p><strong>Género:</strong> Aventuras, Ciencia Ficción, Familiar</p>
           <p>
             Este nuevo original de Disney+ cuenta la historia de Caleb Channing
             (Isaiah Russell-Bailey), que vive en 2257 en una colonia minera
@@ -209,13 +254,23 @@
           </p>
           <button onclick="window.modal4.close();">Volver</button>
         </dialog>
-      </div>
 
-      <div class="movies">
-        <h2>Black Panther: Wakanda Forever (2022)</h2>
-        <img src="../media/disney5.jpg" alt="Poster Wakanda" width="200px" />
-        <button onclick="window.modal5.showModal();">Más info</button>
-
+        <div
+          id="movie5"
+          class="col-md-6 col-sm-12 card movies"
+          style="width: 13rem"
+        >
+          <img
+            src="../media/disney5.jpg"
+            class="card-img-top"
+            alt="Poster Black Panther: Wakanda Forever"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Black Panther: Wakanda Forever</h6>
+            <p class="card-text">(2023)</p>
+            <button onclick="window.modal5.showModal();">» Ver más</button>
+          </div>
+        </div>
         <dialog id="modal5">
           <iframe
             width="560"
@@ -226,8 +281,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <p>Dirección: Ryan Coogler</p>
-          <p>Género: Acción, Aventuras, Ciencia Ficción</p>
+          <p><strong>Dirección:</strong> Ryan Coogler</p>
+          <p><strong>Género:</strong>Acción, Aventuras, Ciencia Ficción</p>
           <p>
             Tras la muerte del rey T’Challa, los poderes restantes de Wakanda
             deben unirse para protegerse de la imponente amenaza del rey Namor
@@ -239,23 +294,24 @@
           </p>
           <button onclick="window.modal5.close();">Volver</button>
         </dialog>
-      </div>
-    </main>
-    <!-- Fin Contenido principal-->
-    <!-- Footer-->
-    <footer class="row pie">
-      <div class="col-sm">
-        <a href="./compra.html" class="buy-button">Compra aquí</a>
-      </div>
-      <div class="col-sm">
-        <a href="./suscribete.html" class="subscribe">Suscríbete</a>
-      </div>
-      <div class="col-sm">
-        <p class="date">
-          Semana del <span>15</span> de <span>junio</span> del <span>2023</span>
-        </p>
-      </div>
-    </footer>
+      </main>
+      <!-- Fin Contenido principal-->
+      <!-- Footer-->
+      <footer class="row pie">
+        <div class="col-sm">
+          <a href="./compra.html" class="buy-button">Compra aquí</a>
+        </div>
+        <div class="col-sm">
+          <a href="./suscribete.html" class="subscribe">Suscríbete</a>
+        </div>
+        <div class="col-sm">
+          <p class="date">
+            Semana del <span>15</span> de <span>junio</span> del
+            <span>2023</span>
+          </p>
+        </div>
+      </footer>
+    </div>
     <!-- Links bootstrap - popper y js-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
