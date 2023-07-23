@@ -1,0 +1,247 @@
+/* Inicio estilos index */
+
+main .sectionIndex1, main .sectionIndex2, main .sectionIndex3{
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 30px;
+    color: #191825;
+    margin-top: 30px;
+
+    .text{
+        margin-top: 20px;
+        width: 70%;
+        text-align: justify;
+    }
+    
+    .imgInicio{
+        opacity: 0;
+        animation: aparecer 3.5s forwards;
+    }
+}
+
+.sectionIndex2 p, .sectionIndex2 h2 {
+    @extend .text;
+    margin-left: 25%;
+}
+
+/* Fin estilos index */
+
+/* Inicio estilos movies pages*/
+main.mainMovies{
+    background-color: #DDE6ED;
+    align-items: center;
+    justify-content: center;
+
+    .movies{
+        border-radius: 12% 12%  20px 20px;
+        margin:10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0;
+        border: none;
+        
+        p{
+            text-align: center;
+        }
+
+        h6{
+            @extend p;
+            font-weight: bold;
+        }
+
+        img{
+            border-radius:  12% 12% 0 0;
+            margin:0; 
+            max-height: 260px; 
+            opacity: 0;
+            animation: aparecer 5s forwards;
+        }
+
+        .card-body{
+            padding: 10px;
+        }
+
+        .card-title{
+            height: 40px;
+        }
+    }
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
+.movies button, dialog button, .sendBoton{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    border: 1px solid $SecundaryColorDark;
+    display: block;
+    background-color: $SecundaryColorLight;
+    color: $textColorContranst;
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px auto;
+    opacity: 90%;
+    width: 150px;
+    align-self: center;
+    transition: color 0.3s ease;
+}
+
+.movies button:hover, div form button:hover, .sendBoton:hover{
+    color: #C3ACD0;
+}
+
+dialog {
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    z-index: 999;
+    margin: 0 auto;
+    iframe{
+        margin:0 auto;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }   
+}
+
+#modal1, #modal2,  #modal3,  #modal4,  #modal5{
+    width: 60%;
+}
+
+/* Fin estilos movies pages*/
+
+/* Inicio estilos para suscríbete */
+main.mainSuscribe{
+    padding: 4%;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+    div {
+        p{
+        text-align: justify;
+        }
+        form button{
+            @extend .sendBoton;        
+            padding: 5px;
+            display: flex;
+            width: fit-content;
+            margin-left: 0;
+        }
+    }
+ }
+ /* Fin estilos para suscríbete */
+ /* Inicio estilos para compra */
+ .buyTable{
+    max-width: 40%;
+    max-height: 400px;
+    position: fixed;
+    left: 65%;
+    top:202px;
+    animation:salto 2s ease-in-out 1;
+
+    caption{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color:$SecundaryColorLight;
+     }
+
+     tr td:first-child{
+        font-weight: bold;
+     }
+}
+
+@keyframes salto {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+ 
+ .containerCompra{
+    max-width: 50%;
+    margin: 5% 2% 5% 10%;
+    h2{
+        text-align: center;
+        border-bottom: $SecundaryColorLight solid 0.5px;
+        padding: 4%;
+        padding-bottom: 1%;
+        color: $SecundaryColorLight;
+        font-weight: bolder;
+        padding-top: 0;
+    }
+    h3{
+        text-align: center;
+        margin: 5%; 
+        font-weight: bold;
+    }
+    img{
+        align-self: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    div{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    p{
+        text-align: justify;
+        padding: 5px;
+    }
+ }
+
+ /* FIn estilos compra */
+
+ /* Inicio estilos recomienda */
+
+ .mainRecomendation {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 7%;
+    h2{
+        text-align: center;
+        font-weight: bolder;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .buttonContainer{
+        display: flex; 
+        flex-direction: row;
+    }
+    div div{
+        background-color: $SecundaryColorLight; 
+        color: #F1F6F9; 
+        border-radius: 10px; 
+        width: 70px; 
+        height: 70px; 
+        cursor: pointer; 
+        margin: 40px;
+        transition: background-color 0.3s ease;
+
+        p{
+            text-align: center;
+            margin-top: 16px;
+         }
+     }
+
+     div div:hover{
+        background-color: $SecundaryColorDark;
+     }
+   
+     .inputText{
+        width: 20em;
+        margin: 5px;
+     }
+}

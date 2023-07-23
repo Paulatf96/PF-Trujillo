@@ -1,0 +1,10 @@
+$colorGradiente: linear-gradient(90deg, rgba(159,60,147,1) 0%, rgba(27,113,181,1) 100%);
+$SecundaryColorLight: rgba(159,60,147,1);
+$SecundaryColorDark: #9336B4;
+$fontFamily: 'Montserrat', sans-serif;
+$textColorContranst: white;
+
+@import "stylesPages";
+@import "headerFooter";
+@import "mediaMobile";
+@import "mediaTablet";

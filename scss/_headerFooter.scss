@@ -1,0 +1,94 @@
+body {
+    font-family: $fontFamily;
+    min-height: 100vh;
+}
+
+/* Inicio estilos header */
+header{
+    display: flex;
+    height: 140px;
+    margin:0;
+    justify-content: space-between;
+    align-items: end;
+    background: $colorGradiente;
+    .brand{
+        display: flex;
+        align-items: flex-start;
+        align-self: center;
+        padding: 50px;
+    }
+    h1 {
+        display: flex;
+        font-size: 2em;
+        color:$textColorContranst;
+        margin: 20px;
+    }
+    div a {
+        text-decoration: none;
+    }
+
+    .navbar{
+        background-color: transparent;
+
+        .nav-item{
+            padding: 2px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            border-left: 0.5px solid $textColorContranst;
+            
+            .nav-link{
+                color: $textColorContranst;
+            }
+            .active{
+                color: #0E2954;
+            }
+        }
+
+        .nav-item a:hover{
+            color:#0E2954;
+        }
+    }
+}
+
+
+/* Inicio estilos footer */
+
+footer{
+    height: 140px;
+    align-items: center;
+    background: $colorGradiente;
+    
+    .buy-button,
+    .subscribe{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        background-color: #DDE6ED;
+        color: #0E2954;
+        padding: 10px 20px;
+        margin-left: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: color 0.5s ease;
+    }
+    .buy-button:hover,
+    .subscribe:hover {
+    color:$SecundaryColorLight;
+    }
+
+    .date{
+        font-size: 1.2em;
+        color:$textColorContranst;
+        text-align: center;
+        padding: 10px 20px;
+    }
+}
+.footerRecomienda{
+    margin-right: 0; 
+}
+
+
+
+
+
+ 

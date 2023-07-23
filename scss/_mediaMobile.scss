@@ -1,0 +1,155 @@
+@media (max-width:576px){
+    /* Inicio media para header */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+        margin:0;
+        .brand{
+            padding: 2px;
+            margin-top: 5px;
+            justify-content: end;
+        }
+
+        .navbar{
+            padding: 0;
+            margin: 0;
+            padding-left: 10px;
+            ul .nav-item{
+                border:none
+            }
+        }
+
+        .navbar-toggler{
+            border: white 0.5px solid;
+            margin-top: 0;
+            position: relative;
+            bottom: 60px;     
+        }
+        .navbar-toggler-icon{
+            background-image:white;
+            width: 16px;
+            align-self: center;
+            margin-top: 0;
+        }
+
+    } 
+    /* Fin media para header */
+    /* Inicio media para footer */
+    .buy-button, .subscribe, .date{
+        padding: 5px;
+    }
+   a.buy-button, a.subscribe, p.date{
+        display: block;
+        font-size: 0.8em;
+        color: white;
+        background-color: transparent;
+    }
+    a.buy-button:hover, a.subscribe:hover{
+        color: $SecundaryColorLight;
+    }
+    /* Fin media para footer */
+    .container-fluid{
+        margin-right: 0;
+        padding: 0;
+        border:none;
+    }
+    /* Inicio Media para index */
+    main {
+        .sectionIndex1, .sectionIndex2{
+            border-bottom: $SecundaryColorLight solid 0.5px;
+        }
+        .sectionIndex2 p, .sectionIndex2 h2 {
+            margin-left:0;
+        }
+              
+    }
+    section.sectionIndex1, section.sectionIndex2, section.sectionIndex3{
+
+        h2{
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        p{
+            margin-top: 20px;
+        }
+
+        .text{
+            width: 100%;
+        }
+    }
+        
+    
+    
+    
+   /* Fin media para index */
+
+   /* Inicio media para pages */
+   
+
+   body{
+        min-height: 100vh;
+        .movies button{
+            margin: 5px auto;
+            width: fit-content;
+            padding: 2px;
+       }
+
+       #modal1, #modal2,  #modal3,  #modal4,  #modal5{
+        width: 90%;
+        position: relative;
+        margin-top: 30%;
+        }
+        dialog iframe{
+            width: 90%;
+            margin: 5%;
+        }
+
+   }
+
+    /* Media para suscribete */
+    .carousel-inner{
+        margin-bottom: 10px;
+    }
+    /* Media para compra */
+    .buyTable{
+    position:static;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 90%;
+    }
+    .containerCompra{
+        max-width: 80%;
+        margin: 0 auto;
+
+        h2{
+            padding-top: 20px;
+        }
+        img{
+            width: 300px;
+        }
+    }
+    /* Media para recomienda */
+
+    .mainRecomendation {
+        max-width: 100%;
+        h6{
+            margin: 5%;
+        }
+        .buttonContainer {
+            flex-direction: column;
+        }
+        div div {
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+        }
+     }
+
+}

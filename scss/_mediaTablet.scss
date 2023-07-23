@@ -1,0 +1,92 @@
+@media (max-width: 821px) and (min-width:577px) {
+    body{
+        min-height: 100vh;
+       }
+    .container-fluid{
+        margin-right: 0;
+        padding: 0;
+        border:none;
+    }
+    .row{
+        margin: 0;
+    }
+    .navbar{
+        width: 700px;
+    }
+    /* Inicio media para header */
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: fit-content;
+            margin:0;
+
+            .brand{
+                padding: 2px;
+                margin-top: 5px;
+                justify-content: end;
+            }
+
+            .navbar{
+                padding: 0;
+                margin: 0;
+                padding-left: 10px;
+
+                ul .nav-item{
+                    border:none;
+                }
+            }
+            .navbar-toggler{
+                border: $textColorContranst 0.5px solid;
+                margin-top: 0;
+                position: relative;
+                bottom: 60px;     
+            }
+            .navbar-toggler-icon{
+                background-image:$textColorContranst;
+                width: 16px;
+                align-self: center;
+                margin-top: 0;
+            }
+        }
+  
+    /* Fin media para header */
+    /* Media para pages */
+    
+        #modal1, #modal2,  #modal3,  #modal4,  #modal5{
+            width: 80%;
+            position: relative;
+            margin-top: 30%;
+        }
+        dialog iframe{
+            width: 90%;
+            margin: 5%;
+        }
+
+    /* Media para suscribete */
+       .carousel-inner{
+        margin-bottom: 30px;
+       }
+
+    /* Media compra */
+    .buyTable{
+        left: 60%;
+        top:260px;
+    }
+
+    .containerCompra{
+        max-width: 40%;
+        img{
+            width: 300px;
+        }
+    }
+     /* Media recomienda */
+     #recomendation, #suscribe{
+        min-height: calc(100vh - 270px);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+     }
+}

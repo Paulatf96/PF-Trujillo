@@ -1,0 +1,555 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+
+/* Inicio estilos header */
+header{
+    display: flex;
+    height: 140px;
+    margin:0;
+    justify-content: space-between;
+    align-items: end;
+    background: linear-gradient(90deg, rgba(159,60,147,1) 0%, rgba(27,113,181,1) 100%);
+}
+header .brand{
+    display: flex;
+    align-items: flex-start;
+    align-self: center;
+    padding: 50px;
+}
+h1 {
+    display: flex;
+    font-size: 2em;
+    color:white ;
+    margin: 20px;
+}
+div a {
+    text-decoration: none;
+}
+header.navbar{
+    background-color: transparent;
+}
+ul .nav-item{
+    padding: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-left: 0.5px solid white;
+
+}
+ul li .nav-link{
+    color: white;
+}
+/* Fin estilos header */
+/* Inicio estilos index */
+
+main .sectionIndex1, main .sectionIndex2, main .sectionIndex3{
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 30px;
+    color: #191825;
+    margin-top: 30px;
+}
+
+.sectionIndex1 p, .sectionIndex2 h2, .sectionIndex2 p, .sectionIndex3 p{
+    margin-top: 20px;
+    width: 70%;
+    text-align: justify;
+}
+
+.sectionIndex2 p, .sectionIndex2 h2 {
+    margin-left: 25%;
+}
+
+main .imgInicio{
+    opacity: 0;
+    animation: aparecer 3.5s forwards;
+}
+/* Fin estilos index */
+
+/* Inicio estilos footer */
+
+footer.pie {
+    height: 140px;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(159,60,147,1) 0%, rgba(27,113,181,1) 100%);
+}
+
+.footerRecomienda{
+    margin: 0;
+}
+.buy-button,
+.subscribe{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #DDE6ED;
+    color: #0E2954;
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: color 0.5s ease;
+}
+.date{
+    font-size: 1.2em;
+    color:white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.buy-button:hover,
+.subscribe:hover {
+  color:rgb(159,60,147);
+} 
+
+/* Inicio estilos movies pages*/
+main.mainMovies{
+    background-color: #DDE6ED;
+    align-items: center;
+    justify-content: center;
+}
+
+div.movies{
+    border-radius: 12% 12%  20px 20px;
+    margin:10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    border: none;
+    
+}
+
+.movies h6, .movies p{
+    text-align: center;
+}
+
+.movies h6{
+    font-weight: bold;
+}
+.movies img{
+    border-radius:  12% 12% 0 0;
+    margin:0; 
+    max-height: 260px; 
+    opacity: 0;
+    animation: aparecer 5s forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.movies .card-body{
+    padding: 10px;
+   
+}
+
+.movies .card-title{
+    height: 40px;
+}
+
+.movies button, dialog button, .sendBoton{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    border: 1px solid #9336B4;
+    display: block;
+    background-color: rgba(159,60,147,1);
+    color: white;
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px auto;
+    opacity: 90%;
+    width: 150px;
+    align-self: center;
+    transition: color 0.3s ease;
+}
+
+.movies button:hover, div form button:hover, .sendBoton:hover{
+    color: #C3ACD0;
+}
+
+dialog iframe{
+    margin:0 auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+#modal1, #modal2,  #modal3,  #modal4,  #modal5{
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    width: 60%;
+    z-index: 999;
+    margin: 0 auto;
+}
+/* Fin estilos movies pages*/
+/* Inicio estilos para suscríbete */
+ main.mainSuscribe{
+    padding: 4%;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+ }
+
+ main div p{
+    text-align: justify;
+ }
+
+ div form button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    border: 1px solid #9336B4;
+    background-color: rgba(159,60,147,1);
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px auto;
+    opacity: 90%;
+ }
+
+ /* Inicio estilos para compra */
+ .buyTable{
+    max-width: 40%;
+    max-height: 400px;
+    position: fixed;
+    left: 65%;
+    top:202px;
+    animation:salto 2s ease-in-out 1;
+}
+
+@keyframes salto {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+ 
+ 
+ table caption{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(159,60,147)
+ }
+
+ table tr td:first-child{
+    font-weight: bold;
+ }
+
+ .containerCompra{
+    max-width: 50%;
+    margin: 5% 2% 5% 10%;
+ }
+
+ .containerCompra h2{
+    text-align: center;
+    border-bottom: rgb(159,60,147) solid 0.5px;
+    padding: 4%;
+    padding-bottom: 1%;
+    color: rgb(159,60,147);
+    font-weight: bolder;
+    padding-top: 0;
+ }
+ .containerCompra h3{
+    text-align: center;
+    margin: 5%; 
+    font-weight: bold;
+ }
+ 
+ .containerCompra img{
+    align-self: center;
+    justify-content: center;
+    margin: 20px;
+ }
+
+ .containerCompra div{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+ }
+ .containerCompra p{
+    text-align: justify;
+    padding: 5px;
+ }
+ /* FIn estilos compra */
+ /* Inicio estilos recomienda */
+
+ .mainRecomendation {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 7%;
+ }
+
+.mainRecomendation h2{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.mainRecomendation form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainRecomendation .buttonContainer{
+    display: flex; 
+    flex-direction: row;
+}
+ .mainRecomendation div div{
+    background-color: rgba(159,60,147,1); 
+    color: #F1F6F9; 
+    border-radius: 10px; 
+    width: 70px; 
+    height: 70px; 
+    cursor: pointer; 
+    margin: 40px;
+    transition: background-color 0.3s ease;
+ }
+
+ .mainRecomendation div div:hover{
+    background-color: #9336B4;
+ }
+
+ .mainRecomendation div div p{
+    text-align: center;
+    margin-top: 16px;
+    
+ }
+
+ .mainRecomendation .inputText{
+    width: 20em;
+    margin: 5px;
+ }
+ @media (max-width: 821px) and (min-width:577px) {
+    body{
+        min-height: 100vh;
+       }
+    .container-fluid{
+        margin-right: 0;
+        padding: 0;
+        border:none;
+    }
+    .row{
+        margin: 0;
+    }
+    .navbar{
+        width: 700px;
+    }
+    /* Inicio media para header */
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: fit-content;
+            margin:0;
+        }
+        header.brand{
+            padding: 2px;
+            margin-top: 5px;
+            justify-content: end;
+        }
+        .navbar{
+            padding: 0;
+            margin: 0;
+            padding-left: 10px;
+        }
+        ul .nav-item{
+            border:none;
+        }
+        .navbar-toggler{
+            border: white 0.5px solid;
+            margin-top: 0;
+            position: relative;
+            bottom: 60px;     
+        }
+        .navbar-toggler-icon{
+            background-image:white;
+            width: 16px;
+            align-self: center;
+            margin-top: 0;
+        }
+    /* Fin media para header */
+
+    /* Media para pages */
+    
+        #modal1, #modal2,  #modal3,  #modal4,  #modal5{
+            width: 80%;
+            position: relative;
+            margin-top: 30%;
+        }
+        dialog iframe{
+            width: 90%;
+            margin: 5%;
+        }
+
+    /* Media para suscribete */
+       .carousel-inner{
+        margin-bottom: 30px;
+       }
+
+    /* Media compra */
+    .buyTable{
+        left: 60%;
+        top:260px;
+    }
+
+    .containerCompra{
+        max-width: 40%;
+    }
+
+    .containerCompra img{
+        width: 300px;
+    }
+    
+}
+
+
+@media (max-width:576px){
+    /* Inicio media para header */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+        margin:0;
+    }
+    header .brand{
+        padding: 2px;
+        margin-top: 5px;
+        justify-content: end;
+    }
+    .navbar{
+        padding: 0;
+        margin: 0;
+        padding-left: 10px;
+    }
+    ul .nav-item{
+        border:none
+    }
+    .navbar-toggler{
+        border: white 0.5px solid;
+        margin-top: 0;
+        position: relative;
+        bottom: 60px;     
+    }
+    .navbar-toggler-icon{
+        background-image:white;
+        width: 16px;
+        align-self: center;
+        margin-top: 0;
+    }
+    /* Fin media para header */
+    /* Inicio media para footer */
+    .buy-button, .subscribe, .date{
+        padding: 5px;
+    }
+   .buy-button, a.subscribe, p.date{
+        display: block;
+        font-size: 0.8em;
+        color: white;
+        background-color: transparent;
+    }
+    a.buy-button:hover, a.subscribe:hover{
+        color: rgb(159,60,147);
+    }
+    /* Fin media para footer */
+    .container-fluid{
+        margin-right: 0;
+        padding: 0;
+        border:none;
+    }
+    /* Inicio Media para index */
+    main .sectionIndex1, main .sectionIndex2{
+        border-bottom: rgb(159,60,147) solid 0.5px;
+        
+    }
+    .sectionIndex2 p, .sectionIndex2 h2 {
+        margin-left:0;
+    }
+    .sectionIndex1 p, .sectionIndex1 h2, .sectionIndex2 h2, .sectionIndex2 p, .sectionIndex3 p{
+        width: 100%;
+        margin-top: 20px;
+    }
+   /* Fin media para index */
+
+   /* Inicio media para pages */
+   .movies button{
+        margin: 5px auto;
+        width: fit-content;
+        padding: 2px;
+   }
+
+   body{
+        min-height: 100vh;
+
+   }
+
+   #modal1, #modal2,  #modal3,  #modal4,  #modal5{
+        width: 90%;
+        position: relative;
+        margin-top: 30%;
+    }
+
+   dialog iframe{
+        width: 90%;
+        margin: 5%;
+    }
+    /* Media para suscribete */
+    .carousel-inner{
+        margin-bottom: 10px;
+    }
+    /* Media para compra */
+    .buyTable{
+    position:static;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 90%;
+    }
+    .containerCompra{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .containerCompra h2{
+        padding-top: 20px;
+    }
+
+    .containerCompra img{
+        width: 300px;
+    }
+
+    /* Media para recomienda */
+
+    .mainRecomendation {
+        max-width: 100%;
+
+     }
+
+    .mainRecomendation h6{
+        margin: 5%;
+    }
+
+    .mainRecomendation .buttonContainer {
+        flex-direction: column;
+    }
+
+    .mainRecomendation div div {
+        width: 100px;
+        height: 40px;
+        margin: 5px;
+    }
+
+}
