@@ -17,13 +17,15 @@
       <link href="../estilos/styles2.css" rel="stylesheet"> 
     </head>
     <body>
+      <div class="container-fluid">
       <!-- Header con navbar de bootstrap -->
+      <div class="row">
       <header class="cabecero col" styles>
           <div class="brand">
             <a href="../index.html"><h1>All Top Five</h1></a>
             <a href="../index.html"><img id="logo" src="../media/camera.png" alt="camara" width="25px"  ></a>
           </div>
-          <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+          <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,9 +61,25 @@
             </div>
           </nav>
       </header>
+    </div>
       <!-- Fin Header -->  
       <!-- Contenido principal-->
-      <main class="mainSuscribe">
+      <main class="row mainSuscribe">
+
+          <div id="carouselExampleSlidesOnly" class="col-lg-6 slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../media/carrusel1.jpg" class="d-block w-100" alt="Poster sin novedad en el frente">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../media/carrusel2.jpg" class="d-block w-100" alt="Poster peter pan y wendy">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../media/carrusel3.jpg" class="d-block w-100" alt="Poster DC Liga de Supermascotas">
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-6">
             <div>
                 <h2> Descubre el top 5 cada semana</h2>
                 <p>No te pierdas la emoción de descubrir el top 5 cada semana y mantente al día con las últimas tendencias en el mundo del cine desde la comodidad de tu correo electrónico. Suscríbete ahora y prepárate para vivir una experiencia cinematográfica única y emocionante.</p>  
@@ -69,11 +87,12 @@
             <div>
                 <form action="">
                     <p><input type="email" placeholder="Email address"></p>
-                    <p><input type="text" placeholder="Tu nombre"></p>
-                    <p><input type="text" placeholder="Plataforma de preferencia"></p>
+                    <p><input type="text" placeholder="Nombre"></p>
+                    <p><input type="text" placeholder="Plataforma"></p>
                     <button type:"submit" value="send">Suscríbete</button>
                 </form>
             </div>
+          </div>
         </main>
       <!-- Fin Contenido principal-->
       <!-- Footer-->
@@ -88,6 +107,7 @@
           <p class="date">Semana del <span>15</span> de <span>junio</span> del <span>2023</span></p>  
         </div>
     </footer>
+  </div>
     <!-- Links bootstrap popper y js-->
       <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

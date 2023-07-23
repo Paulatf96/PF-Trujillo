@@ -23,7 +23,7 @@
           <a href="../index.html"><h1>All Top Five</h1></a>
           <a href="../index.html"><img id="logo" src="../media/camera.png" alt="camara" width="25px"  ></a>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -65,39 +65,39 @@
       <main class="mainRecomendation">        
         <h2> ¿Alguna recomendación para la red? </h2>
         <form action:"">
-          <div style="display: flex; flex-direction: row;">
-            <div onclick="setPlatform(`netflix`)" style="background-color: #212A3E; color: #F1F6F9; border-radius: 10px; width: 70px; height: 70px; text-align: center; display: flex; align-items: center; cursor: pointer; margin: 40px">
-              <p style="flex:1">Netflix</p>
+          <div class="buttonContainer">
+            <div onclick="setPlatform(`netflix`)">
+              <p>Netflix</p>
             </div>
 
-            <div onclick="setPlatform(`hbomax`)" style="background-color: #212A3E; color: #F1F6F9; border-radius: 10px; width: 70px; height: 70px; text-align: center; display: flex; align-items: center; cursor: pointer; margin: 40px;">
-              <p style="flex:1; flex-wrap: wrap;">HBO Max </p>
+            <div onclick="setPlatform(`hbomax`)" >
+              <p>HBO Max </p>
             </div>
 
-            <div onclick="setPlatform(`disney`)" style="background-color: #212A3E; color: #F1F6F9; border-radius: 10px; width: 70px; height: 70px; text-align: center; display: flex; align-items: center; cursor: pointer; margin: 40px">
-              <p style="flex:1">Disney +</p>
+            <div onclick="setPlatform(`disney`)" >
+              <p>Disney +</p>
             </div>
 
-            <div onclick="setPlatform(`prime`)" style="background-color: #212A3E; color: #F1F6F9; border-radius: 10px; width: 70px; height: 70px; text-align: center; display: flex; align-items: center; cursor: pointer; margin: 40px">
-              <p style="flex:1">Prime video</p>
+            <div onclick="setPlatform(`prime`)" >
+              <p>Prime video</p>
             </div>
           </div>
 
-          <p>Tipo de contenido
-              <select name:"tipo">
+          <h6>Tipo de contenido</h6>
+              <select class="inputText" name:"tipo">
               <option value:"pelicula">Película</option>
               <option value:"serie">Serie</option>
               </select>
-          </p>
+          
 
-          <p><input type="text" placeholder="Nombre de la película o serie"></p>
+          <p><input class="inputText" type="text" placeholder="Nombre de la película o serie"></p>
           <p>¡Gracias por recomendar!</p>
-          <button type:"submit" value="send">Enviar</button>
+          <button class="sendBoton" type:"submit" value="send">Enviar</button>
         </form>
       </main>
       <!-- Fin Contenido principal-->
       <!-- Footer-->
-      <footer class="row pie">
+      <footer class="row pie footerRecomienda">
           <div class="col-sm">
           <a href="./compra.html" class="buy-button">Compra aquí</a>
         </div>

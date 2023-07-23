@@ -3,6 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
 }
+
 /* Inicio estilos header */
 header{
     display: flex;
@@ -69,6 +70,10 @@ footer.pie {
     align-items: center;
     background: linear-gradient(90deg, rgba(159,60,147,1) 0%, rgba(27,113,181,1) 100%);
 }
+
+.footerRecomienda{
+    margin: 0;
+}
 .buy-button,
 .subscribe{
     font-family: 'Montserrat', sans-serif;
@@ -132,7 +137,7 @@ div.movies{
     height: 40px;
 }
 
-.movies button, dialog button{
+.movies button, dialog button, .sendBoton{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     border: 1px solid #9336B4;
@@ -149,7 +154,7 @@ div.movies{
     align-self: center;
 }
 
-.movies button:hover{
+.movies button:hover, div form button:hover{
     color: #C3ACD0;
 }
 
@@ -168,15 +173,227 @@ dialog iframe{
     margin: 0 auto;
 }
 /* Fin estilos movies pages*/
+/* Inicio estilos para suscríbete */
+ main.mainSuscribe{
+    padding: 4%;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+ }
+
+ main div p{
+    text-align: justify;
+ }
+
+ div form button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    border: 1px solid #9336B4;
+    background-color: rgba(159,60,147,1);
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px auto;
+    opacity: 90%;
+ }
+
+ /* Inicio estilos para compra */
+ .buyTable{
+    max-width: 40%;
+    max-height: 400px;
+    position: fixed;
+    left: 65%;
+    top:202px;
+ }
+ 
+ table caption{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(159,60,147)
+ }
+
+ table tr td:first-child{
+    font-weight: bold;
+ }
+
+ .containerCompra{
+    max-width: 50%;
+    margin: 5% 2% 5% 10%;
+ }
+
+ .containerCompra h2{
+    text-align: center;
+    border-bottom: rgb(159,60,147) solid 0.5px;
+    padding: 4%;
+    padding-bottom: 1%;
+    color: rgb(159,60,147);
+    font-weight: bolder;
+    padding-top: 0;
+ }
+ .containerCompra h3{
+    text-align: center;
+    margin: 5%; 
+    font-weight: bold;
+ }
+ 
+ .containerCompra img{
+    align-self: center;
+    justify-content: center;
+    margin: 20px;
+ }
+
+ .containerCompra div{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+ }
+ .containerCompra p{
+    text-align: justify;
+    padding: 5px;
+ }
+ /* FIn estilos compra */
+ /* Inicio estilos recomienda */
+
+ .mainRecomendation {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 7%;
+ }
+
+.mainRecomendation h2{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.mainRecomendation form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainRecomendation .buttonContainer{
+    display: flex; 
+    flex-direction: row;
+}
+ .mainRecomendation div div{
+    background-color: rgba(159,60,147,1); 
+    color: #F1F6F9; 
+    border-radius: 10px; 
+    width: 70px; 
+    height: 70px; 
+    cursor: pointer; 
+    margin: 40px;
+ }
+
+ .mainRecomendation div div:hover{
+    opacity: 80%;
+ }
+
+ .mainRecomendation div div p{
+    text-align: center;
+    margin-top: 16px;
+    
+ }
+
+ .mainRecomendation .inputText{
+    width: 20em;
+    margin: 5px;
+ }
+ @media (max-width: 821px) and (min-width:577px) {
+    body{
+        min-height: 100vh;
+       }
+    .container-fluid{
+        margin-right: 0;
+        padding: 0;
+        border:none;
+    }
+    .row{
+        margin: 0;
+    }
+    .navbar{
+        width: 700px;
+    }
+    /* Inicio media para header */
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: fit-content;
+            margin:0;
+        }
+        header.brand{
+            padding: 2px;
+            margin-top: 5px;
+            justify-content: end;
+        }
+        .navbar{
+            padding: 0;
+            margin: 0;
+            padding-left: 10px;
+        }
+        ul .nav-item{
+            border:none;
+        }
+        .navbar-toggler{
+            border: white 0.5px solid;
+            margin-top: 0;
+            position: relative;
+            bottom: 60px;     
+        }
+        .navbar-toggler-icon{
+            background-image:white;
+            width: 16px;
+            align-self: center;
+            margin-top: 0;
+        }
+    /* Fin media para header */
+
+    /* Media para pages */
+    
+        #modal1, #modal2,  #modal3,  #modal4,  #modal5{
+            width: 80%;
+            position: relative;
+            margin-top: 30%;
+        }
+        dialog iframe{
+            width: 90%;
+            margin: 5%;
+        }
+
+    /* Media para suscribete */
+       .carousel-inner{
+        margin-bottom: 30px;
+       }
+
+    /* Media compra */
+    .buyTable{
+        left: 60%;
+        top:260px;
+    }
+
+    .containerCompra{
+        max-width: 40%;
+    }
+
+    .containerCompra img{
+        width: 300px;
+    }
+    
+}
+
 
 @media (max-width:576px){
     /* Inicio media para header */
     header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: fit-content;
-    margin:0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+        margin:0;
     }
     header .brand{
         padding: 2px;
@@ -239,84 +456,63 @@ dialog iframe{
 
    /* Inicio media para pages */
    .movies button{
-    margin: 5px auto;
-    width: fit-content;
-    padding: 2px;
+        margin: 5px auto;
+        width: fit-content;
+        padding: 2px;
    }
 
    body{
-    min-height: 100vh;
+        min-height: 100vh;
 
    }
 
    #modal1, #modal2,  #modal3,  #modal4,  #modal5{
-    width: 90%;
-    position: relative;
-    margin-top: 30%;
-   }
+        width: 90%;
+        position: relative;
+        margin-top: 30%;
+    }
 
    dialog iframe{
-    width: 90%;
-    margin: 5%;
-   }
+        width: 90%;
+        margin: 5%;
+    }
+    /* Media para suscribete */
+    .carousel-inner{
+        margin-bottom: 10px;
+    }
+    /* Media para compra */
+    .buyTable{
+    position:static;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 90%;
+    }
+    .containerCompra{
+        max-width: 80%;
+        margin: 0 auto;
+    }
 
-}
+    .containerCompra h2{
+        padding-top: 20px;
+    }
 
-@media(max-width: 820px) and (min-width:577px) {
-    .container-fluid{
-        margin-right: 0;
-        padding: 0;
-        border:none
+    .containerCompra img{
+        width: 300px;
     }
-    .row{
-        margin: 0;
-    }
-    .navbar{
-        width: 700px;
-    }
-    /* Inicio media para header */
-    header {
-        display: flex;
+
+    /* Media para recomienda */
+
+    .mainRecomendation .buttonContainer {
         flex-direction: column;
-        align-items: flex-start;
-        height: fit-content;
-        margin:0;
-        }
-        header .brand{
-            padding: 2px;
-            margin-top: 5px;
-            justify-content: end;
-        }
-        .navbar{
-            padding: 0;
-            margin: 0;
-            padding-left: 10px;
-        }
-        ul .nav-item{
-            border:none
-        }
-        .navbar-toggler{
-            border: white 0.5px solid;
-            margin-top: 0;
-            position: relative;
-            bottom: 60px;     
-        }
-        .navbar-toggler-icon{
-            background-image:white;
-            width: 16px;
-            align-self: center;
-            margin-top: 0;
-        }
-        /* Fin media para header */
-    
-   #modal1, #modal2,  #modal3,  #modal4,  #modal5{
-    width: 80%;
-    position: relative;
-    margin-top: 30%;
-   }
-   dialog iframe{
-    width: 90%;
-    margin: 5%;
-   }
-}
+    }
 
+    .mainRecomendation div div {
+        width: 100px;
+        height: 40px;
+        margin: 5px;
+    }
+
+}

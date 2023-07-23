@@ -24,85 +24,89 @@
     <link href="../estilos/styles2.css" rel="stylesheet" />
   </head>
   <body>
-   <div class="container-fluid">
-    <div class="row">
-    <!-- Header con navbar de bootstrap -->
-    <header class="cabecero col" styles>
-      <div class="brand">
-        <a href="../index.html"><h1>All Top Five</h1></a>
-        <a href="../index.html"
-          ><img id="logo" src="../media/camera.png" alt="camara" width="25px"
-        /></a>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Header con navbar de bootstrap -->
+        <header class="cabecero col" styles>
+          <div class="brand">
+            <a href="../index.html"><h1>All Top Five</h1></a>
+            <a href="../index.html"
+              ><img
+                id="logo"
+                src="../media/camera.png"
+                alt="camara"
+                width="25px"
+            /></a>
+          </div>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./netflix.html">Netflix</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./disney.html">Disney +</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./prime.html">Prime</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="./hbomax.html"
+                      >HBO max</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./recomienda.html">Recomienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./suscribete.html">Suscríbete</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./compra.html">Compra</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./netflix.html">Netflix</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./disney.html">Disney +</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./prime.html">Prime</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./hbomax.html"
-                  >HBO max</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./recomienda.html">Recomienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./suscribete.html">Suscríbete</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./compra.html">Compra</a>
-              </li>
-            </ul>
+      <!-- Fin Header -->
+      <!-- Contenido principal-->
+      <main class="row mainMovies">
+        <div
+          id="movie1"
+          class="col-md-6 col-sm-12 card movies"
+          style="width: 13rem"
+        >
+          <img
+            src="../media/hbo1.jpg"
+            class="card-img-top"
+            alt="Poster Cinco lobitos"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Cinco lobitos</h6>
+            <p class="card-text">(2022)</p>
+            <button onclick="window.modal1.showModal();">» Ver más</button>
           </div>
         </div>
-      </nav>
-    </header>
-  </div>
-    <!-- Fin Header -->
-    <!-- Contenido principal-->
-    <main class="row mainMovies">
-      <div
-      id="movie1"
-      class="col-md-6 col-sm-12 card movies"
-      style="width: 13rem"
-    >
-      <img
-        src="../media/hbo1.jpg"
-        class="card-img-top"
-        alt="Poster Cinco lobitos"
-      />
-      <div class="card-body">
-        <h6 class="card-title">Cinco lobitos</h6>
-        <p class="card-text">(2022)</p>
-        <button onclick="window.modal1.showModal();">» Ver más</button>
-      </div>
-    </div>
 
         <dialog id="modal1">
           <iframe
@@ -126,23 +130,23 @@
           </p>
           <button onclick="window.modal1.close();">Volver</button>
         </dialog>
-     
+
         <div
-        id="movie2"
-        class="col-md-6 col-sm-12 card movies"
-        style="width: 13rem"
-      >
-        <img
-          src="../media/hbo2.jpg"
-          class="card-img-top"
-          alt="Poster DC Liga de Supermascotas"
-        />
-        <div class="card-body">
-          <h6 class="card-title">DC Liga de Supermascotas</h6>
-          <p class="card-text">(2023)</p>
-          <button onclick="window.modal2.showModal();">» Ver más</button>
+          id="movie2"
+          class="col-md-6 col-sm-12 card movies"
+          style="width: 13rem"
+        >
+          <img
+            src="../media/hbo2.jpg"
+            class="card-img-top"
+            alt="Poster DC Liga de Supermascotas"
+          />
+          <div class="card-body">
+            <h6 class="card-title">DC Liga de Supermascotas</h6>
+            <p class="card-text">(2023)</p>
+            <button onclick="window.modal2.showModal();">» Ver más</button>
+          </div>
         </div>
-      </div>
 
         <dialog id="modal2">
           <iframe
@@ -166,23 +170,23 @@
           </p>
           <button onclick="window.modal2.close();">Volver</button>
         </dialog>
-     
+
         <div
-        id="movie3"
-        class="col-md-6 col-sm-12 card movies"
-        style="width: 13rem"
-      >
-        <img
-          src="../media/hbo3.jpg"
-          class="card-img-top"
-          alt="Poster El método Williams"
-        />
-        <div class="card-body">
-          <h6 class="card-title">El método Williams</h6>
-          <p class="card-text">(2021)</p>
-          <button onclick="window.modal3.showModal();">» Ver más</button>
+          id="movie3"
+          class="col-md-6 col-sm-12 card movies"
+          style="width: 13rem"
+        >
+          <img
+            src="../media/hbo3.jpg"
+            class="card-img-top"
+            alt="Poster El método Williams"
+          />
+          <div class="card-body">
+            <h6 class="card-title">El método Williams</h6>
+            <p class="card-text">(2021)</p>
+            <button onclick="window.modal3.showModal();">» Ver más</button>
+          </div>
         </div>
-      </div>
 
         <dialog id="modal3">
           <iframe
@@ -208,23 +212,23 @@
           </p>
           <button onclick="window.modal3.close();">Volver</button>
         </dialog>
-     
+
         <div
-        id="movie4"
-        class="col-md-6 col-sm-12 card movies"
-        style="width: 13rem"
-      >
-        <img
-          src="../media/hbo4.jpg"
-          class="card-img-top"
-          alt="Poster Elvis"
-        />
-        <div class="card-body">
-          <h6 class="card-title">Elvis</h6>
-          <p class="card-text">(2022)</p>
-          <button onclick="window.modal4.showModal();">» Ver más</button>
+          id="movie4"
+          class="col-md-6 col-sm-12 card movies"
+          style="width: 13rem"
+        >
+          <img
+            src="../media/hbo4.jpg"
+            class="card-img-top"
+            alt="Poster Elvis"
+          />
+          <div class="card-body">
+            <h6 class="card-title">Elvis</h6>
+            <p class="card-text">(2022)</p>
+            <button onclick="window.modal4.showModal();">» Ver más</button>
+          </div>
         </div>
-      </div>
 
         <dialog id="modal4">
           <iframe
@@ -250,23 +254,23 @@
           </p>
           <button onclick="window.modal4.close();">Volver</button>
         </dialog>
-      
+
         <div
-        id="movie5"
-        class="col-md-6 col-sm-12 card movies"
-        style="width: 13rem"
-      >
-        <img
-          src="../media/hbo5.jpg"
-          class="card-img-top"
-          alt="Poster The Batman"
-        />
-        <div class="card-body">
-          <h6 class="card-title">The Batman</h6>
-          <p class="card-text">(2022)</p>
-          <button onclick="window.modal5.showModal();">» Ver más</button>
+          id="movie5"
+          class="col-md-6 col-sm-12 card movies"
+          style="width: 13rem"
+        >
+          <img
+            src="../media/hbo5.jpg"
+            class="card-img-top"
+            alt="Poster The Batman"
+          />
+          <div class="card-body">
+            <h6 class="card-title">The Batman</h6>
+            <p class="card-text">(2022)</p>
+            <button onclick="window.modal5.showModal();">» Ver más</button>
+          </div>
         </div>
-      </div>
 
         <dialog id="modal5">
           <iframe
@@ -293,24 +297,24 @@
           </p>
           <button onclick="window.modal5.close();">Volver</button>
         </dialog>
-      
-    </main>
-    <!-- Fin Contenido principal-->
-    <!-- Footer-->
-    <footer class="row pie">
-      <div class="col-sm">
-        <a href="./compra.html" class="buy-button">Compra aquí</a>
-      </div>
-      <div class="col-sm">
-        <a href="./suscribete.html" class="subscribe">Suscríbete</a>
-      </div>
-      <div class="col-sm">
-        <p class="date">
-          Semana del <span>15</span> de <span>junio</span> del <span>2023</span>
-        </p>
-      </div>
-    </footer>
-    </div> 
+      </main>
+      <!-- Fin Contenido principal-->
+      <!-- Footer-->
+      <footer class="row pie">
+        <div class="col-sm">
+          <a href="./compra.html" class="buy-button">Compra aquí</a>
+        </div>
+        <div class="col-sm">
+          <a href="./suscribete.html" class="subscribe">Suscríbete</a>
+        </div>
+        <div class="col-sm">
+          <p class="date">
+            Semana del <span>15</span> de <span>junio</span> del
+            <span>2023</span>
+          </p>
+        </div>
+      </footer>
+    </div>
     <!-- Links bootstrap - popper y js-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
