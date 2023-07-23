@@ -533,6 +533,15 @@ dialog iframe{
 
     /* Media para recomienda */
 
+    .mainRecomendation {
+        max-width: 100%;
+
+     }
+
+    .mainRecomendation h6{
+        margin: 5%;
+    }
+
     .mainRecomendation .buttonContainer {
         flex-direction: column;
     }
