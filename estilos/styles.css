@@ -1,23 +1,40 @@
 @charset "UTF-8";
 /* Inicio estilos index */
-main .sectionIndex1, main .sectionIndex2, main .sectionIndex3 {
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body .container-fluid {
+  flex: 1;
+  displaY: flex;
+  flex-direction: column;
+  padding: 0;
+}
+body .container-fluid main {
+  flex: 1;
+}
+body .container-fluid .row {
+  margin: 0;
+}
+body .container-fluid main .sectionIndex1, body .container-fluid main .sectionIndex2, body .container-fluid main .sectionIndex3 {
   margin-left: 10%;
   margin-right: 10%;
   line-height: 30px;
   color: #191825;
   margin-top: 30px;
 }
-main .sectionIndex1 .text, .sectionIndex2 main .sectionIndex1 p, .sectionIndex2 main.mainMovies .sectionIndex1 .movies h6, .sectionIndex2 main.mainMovies .movies .sectionIndex1 h6, .sectionIndex2 main .sectionIndex1 h2, main .sectionIndex2 .text, main .sectionIndex2 p, main.mainMovies .sectionIndex2 .movies h6, main.mainMovies .movies .sectionIndex2 h6, main .sectionIndex2 h2, main .sectionIndex3 .text, .sectionIndex2 main .sectionIndex3 p, .sectionIndex2 main.mainMovies .sectionIndex3 .movies h6, .sectionIndex2 main.mainMovies .movies .sectionIndex3 h6, .sectionIndex2 main .sectionIndex3 h2 {
+body .container-fluid main .sectionIndex1 .text, body .container-fluid .sectionIndex2 main .sectionIndex1 p, body .container-fluid .sectionIndex2 main.mainMovies .sectionIndex1 .movies h6, body .container-fluid .sectionIndex2 main.mainMovies .movies .sectionIndex1 h6, body .container-fluid .sectionIndex2 main .sectionIndex1 h2, body .container-fluid main .sectionIndex2 .text, body .container-fluid main .sectionIndex2 p, body .container-fluid main.mainMovies .sectionIndex2 .movies h6, body .container-fluid main.mainMovies .movies .sectionIndex2 h6, body .container-fluid main .sectionIndex2 h2, body .container-fluid main .sectionIndex3 .text, body .container-fluid .sectionIndex2 main .sectionIndex3 p, body .container-fluid .sectionIndex2 main.mainMovies .sectionIndex3 .movies h6, body .container-fluid .sectionIndex2 main.mainMovies .movies .sectionIndex3 h6, body .container-fluid .sectionIndex2 main .sectionIndex3 h2 {
   margin-top: 20px;
   width: 70%;
   text-align: justify;
 }
-main .sectionIndex1 .imgInicio, main .sectionIndex2 .imgInicio, main .sectionIndex3 .imgInicio {
+body .container-fluid main .sectionIndex1 .imgInicio, body .container-fluid main .sectionIndex2 .imgInicio, body .container-fluid main .sectionIndex3 .imgInicio {
   opacity: 0;
   animation: aparecer 3.5s forwards;
 }
-
-.sectionIndex2 p, .sectionIndex2 main.mainMovies .movies h6, main.mainMovies .movies .sectionIndex2 h6, .sectionIndex2 h2 {
+body .container-fluid .sectionIndex2 p, body .container-fluid .sectionIndex2 main.mainMovies .movies h6, main.mainMovies .movies body .container-fluid .sectionIndex2 h6, body .container-fluid .sectionIndex2 h2 {
   margin-left: 25%;
 }
 
@@ -250,6 +267,7 @@ header h1 {
 }
 header div a {
   text-decoration: none;
+  font-size: 1.5em;
 }
 header .navbar {
   background-color: transparent;
@@ -262,12 +280,13 @@ header .navbar .nav-item {
 }
 header .navbar .nav-item .nav-link {
   color: white;
+  font-weight: bold;
 }
 header .navbar .nav-item .active {
-  color: #0E2954;
+  color: #FF79CD;
 }
 header .navbar .nav-item a:hover {
-  color: #0E2954;
+  color: #FF79CD;
 }
 
 /* Inicio estilos footer */
@@ -322,7 +341,6 @@ footer .date {
   header .navbar {
     padding: 0;
     margin: 0;
-    padding-left: 10px;
   }
   header .navbar ul .nav-item {
     border: none;
@@ -331,7 +349,7 @@ footer .date {
     border: white 0.5px solid;
     margin-top: 0;
     position: relative;
-    bottom: 60px;
+    bottom: 30px;
   }
   header .navbar-toggler-icon {
     background-image: white;
@@ -360,22 +378,23 @@ footer .date {
     border: none;
   }
   /* Inicio Media para index */
-  main .sectionIndex1, main .sectionIndex2 {
+  body .container-fluid main .sectionIndex1, body .container-fluid main .sectionIndex2 {
     border-bottom: rgb(159, 60, 147) solid 0.5px;
   }
-  main .sectionIndex2 p, main.mainMovies .sectionIndex2 .movies h6, main.mainMovies .movies .sectionIndex2 h6, main .sectionIndex2 h2 {
+  body .container-fluid main .sectionIndex2 p, body .container-fluid main.mainMovies .sectionIndex2 .movies h6, body .container-fluid main.mainMovies .movies .sectionIndex2 h6, body .container-fluid main .sectionIndex2 h2 {
     margin-left: 0;
   }
-  section.sectionIndex1 h2, section.sectionIndex2 h2, section.sectionIndex3 h2 {
+  body .container-fluid main section.sectionIndex1 h2, body .container-fluid main section.sectionIndex2 h2, body .container-fluid main section.sectionIndex3 h2 {
     text-align: center;
     width: 100%;
     margin-top: 20px;
   }
-  section.sectionIndex1 p, section.sectionIndex1 main.mainMovies .movies h6, main.mainMovies .movies section.sectionIndex1 h6, section.sectionIndex2 p, section.sectionIndex2 main.mainMovies .movies h6, main.mainMovies .movies section.sectionIndex2 h6, section.sectionIndex3 p, section.sectionIndex3 main.mainMovies .movies h6, main.mainMovies .movies section.sectionIndex3 h6 {
+  body .container-fluid main section.sectionIndex1 p, body .container-fluid main.mainMovies section.sectionIndex1 .movies h6, body .container-fluid main.mainMovies .movies section.sectionIndex1 h6, body .container-fluid main section.sectionIndex2 p, body .container-fluid main.mainMovies section.sectionIndex2 .movies h6, body .container-fluid main.mainMovies .movies section.sectionIndex2 h6, body .container-fluid main section.sectionIndex3 p, body .container-fluid main.mainMovies section.sectionIndex3 .movies h6, body .container-fluid main.mainMovies .movies section.sectionIndex3 h6 {
     margin-top: 20px;
   }
-  section.sectionIndex1 .text, section.sectionIndex1 .sectionIndex2 p, .sectionIndex2 section.sectionIndex1 p, section.sectionIndex1 .sectionIndex2 h2, .sectionIndex2 section.sectionIndex1 h2, section.sectionIndex1 .sectionIndex2 main.mainMovies .movies h6, .sectionIndex2 main.mainMovies .movies section.sectionIndex1 h6, section.sectionIndex1 main.mainMovies .movies .sectionIndex2 h6, main.mainMovies .movies .sectionIndex2 section.sectionIndex1 h6, section.sectionIndex2 .text, section.sectionIndex2 p, section.sectionIndex2 h2, section.sectionIndex2 main.mainMovies .movies h6, main.mainMovies .movies section.sectionIndex2 h6, section.sectionIndex3 .text, section.sectionIndex3 .sectionIndex2 p, .sectionIndex2 section.sectionIndex3 p, section.sectionIndex3 .sectionIndex2 h2, .sectionIndex2 section.sectionIndex3 h2, section.sectionIndex3 .sectionIndex2 main.mainMovies .movies h6, .sectionIndex2 main.mainMovies .movies section.sectionIndex3 h6, section.sectionIndex3 main.mainMovies .movies .sectionIndex2 h6, main.mainMovies .movies .sectionIndex2 section.sectionIndex3 h6 {
+  body .container-fluid main section.sectionIndex1 .text, body .container-fluid main section.sectionIndex1 .sectionIndex2 p, body .container-fluid .sectionIndex2 main section.sectionIndex1 p, body .container-fluid main section.sectionIndex1 .sectionIndex2 h2, body .container-fluid .sectionIndex2 main section.sectionIndex1 h2, body .container-fluid .sectionIndex2 main.mainMovies section.sectionIndex1 .movies h6, body .container-fluid .sectionIndex2 main.mainMovies .movies section.sectionIndex1 h6, main.mainMovies .movies body .container-fluid main section.sectionIndex1 .sectionIndex2 h6, main.mainMovies .movies body .container-fluid .sectionIndex2 main section.sectionIndex1 h6, body .container-fluid main section.sectionIndex2 .text, body .container-fluid main section.sectionIndex2 p, body .container-fluid main section.sectionIndex2 h2, body .container-fluid main section.sectionIndex2 main.mainMovies .movies h6, main.mainMovies .movies body .container-fluid main section.sectionIndex2 h6, body .container-fluid main section.sectionIndex3 .text, body .container-fluid main section.sectionIndex3 .sectionIndex2 p, body .container-fluid .sectionIndex2 main section.sectionIndex3 p, body .container-fluid main section.sectionIndex3 .sectionIndex2 h2, body .container-fluid .sectionIndex2 main section.sectionIndex3 h2, body .container-fluid .sectionIndex2 main.mainMovies section.sectionIndex3 .movies h6, body .container-fluid .sectionIndex2 main.mainMovies .movies section.sectionIndex3 h6, main.mainMovies .movies body .container-fluid main section.sectionIndex3 .sectionIndex2 h6, main.mainMovies .movies body .container-fluid .sectionIndex2 main section.sectionIndex3 h6 {
     width: 100%;
+    margin: 0;
   }
   /* Fin media para index */
   /* Inicio media para pages */
@@ -437,7 +456,7 @@ footer .date {
     margin: 5px;
   }
 }
-@media (max-width: 821px) and (min-width: 577px) {
+@media (max-width: 835px) and (min-width: 577px) {
   body {
     min-height: 100vh;
   }
@@ -478,7 +497,8 @@ footer .date {
     border: white 0.5px solid;
     margin-top: 0;
     position: relative;
-    bottom: 60px;
+    bottom: 65px;
+    right: 240px;
   }
   header .navbar-toggler-icon {
     background-image: white;

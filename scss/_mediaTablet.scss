@@ -1,4 +1,4 @@
-@media (max-width: 821px) and (min-width:577px) {
+@media (max-width: 835px) and (min-width:577px) {
     body{
         min-height: 100vh;
        }
@@ -40,7 +40,8 @@
                 border: $textColorContranst 0.5px solid;
                 margin-top: 0;
                 position: relative;
-                bottom: 60px;     
+                bottom: 65px;
+                right: 240px; 
             }
             .navbar-toggler-icon{
                 background-image:$textColorContranst;

@@ -25,6 +25,7 @@ header{
     }
     div a {
         text-decoration: none;
+        font-size: 1.5em;
     }
 
     .navbar{
@@ -37,15 +38,16 @@ header{
             border-left: 0.5px solid $textColorContranst;
             
             .nav-link{
-                color: $textColorContranst;
+                color: white;
+                font-weight: bold;
             }
             .active{
-                color: #0E2954;
+                color: #FF79CD;
             }
         }
 
         .nav-item a:hover{
-            color:#0E2954;
+            color:#FF79CD;
         }
     }
 }
