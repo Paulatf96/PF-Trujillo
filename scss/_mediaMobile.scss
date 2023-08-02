@@ -99,20 +99,28 @@
             margin: 5px auto;
             width: fit-content;
             padding: 2px;
+            a{
+                text-decoration: none;
+                color:white;
+            }
        }
 
-       #modal1, #modal2,  #modal3,  #modal4,  #modal5{
-        width: 90%;
-        position: relative;
-        margin-top: 30%;
+        .cardScreen{
+            display: none;
         }
-        dialog iframe{
-            width: 90%;
-            margin: 5%;
+        main.mainMovies
+            .movies{
+                width: 18rem;
+                align-items: center;
+                .cardMobile{
+                    display: block;
+                    width: 80%;
+                    p{
+                        text-align: justify;
+                    }
+            }
         }
-
    }
-
     /* Media para suscribete */
     .carousel-inner{
         margin-bottom: 10px;

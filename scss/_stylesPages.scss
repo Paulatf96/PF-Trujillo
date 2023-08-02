@@ -63,6 +63,7 @@ main.mainMovies{
         margin-bottom: 30px;
         padding: 0;
         border: none;
+        width: 13rem;
         
         p{
             text-align: center;
@@ -87,6 +88,10 @@ main.mainMovies{
 
         .card-title{
             height: 40px;
+        }
+
+        .cardMobile{
+            display: none;
         }
     }
 }

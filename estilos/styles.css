@@ -52,6 +52,7 @@ main.mainMovies .movies {
   margin-bottom: 30px;
   padding: 0;
   border: none;
+  width: 13rem;
 }
 main.mainMovies .movies p, main.mainMovies .movies h6 {
   text-align: center;
@@ -71,6 +72,9 @@ main.mainMovies .movies .card-body {
 }
 main.mainMovies .movies .card-title {
   height: 40px;
+}
+main.mainMovies .movies .cardMobile {
+  display: none;
 }
 
 @keyframes aparecer {
@@ -407,14 +411,23 @@ footer .date {
     width: fit-content;
     padding: 2px;
   }
-  body #modal1, body #modal2, body #modal3, body #modal4, body #modal5 {
-    width: 90%;
-    position: relative;
-    margin-top: 30%;
+  body .movies button a {
+    text-decoration: none;
+    color: white;
   }
-  body dialog iframe {
-    width: 90%;
-    margin: 5%;
+  body .cardScreen {
+    display: none;
+  }
+  body main.mainMovies .movies {
+    width: 18rem;
+    align-items: center;
+  }
+  body main.mainMovies .movies .cardMobile {
+    display: block;
+    width: 80%;
+  }
+  body main.mainMovies .movies .cardMobile p, body main.mainMovies .movies .cardMobile h6 {
+    text-align: justify;
   }
   /* Media para suscribete */
   .carousel-inner {
